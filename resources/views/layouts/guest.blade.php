@@ -211,23 +211,27 @@
                   <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
                 </div>
               </div>
-              <div class="swiper-slide"><img class="header-slider" src="{{ asset('assets/img/transit/headers/header-6.jpg') }}" alt="image" />
+
+              <div class="swiper-slide"><img class="header-slider" src="{{ asset('assets/img/transit/headers/landing7-new.jpg') }}" alt="image" />
                 <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
                   <div class="d-flex flex-center vh-100">
                     <div class="header-overlay"></div>
                     <div class="header-text">
                       <div class="overflow-hidden">
-                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>We are awesome</h1>
+                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>Des outils très simples</h1>
                       </div>
                       <div class="overflow-hidden">
-                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'> that's how we live life <br class="d-block d-md-none"> fullest</p>
+                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'> nous travaillons à vous faciliter la vie <br class="d-block d-md-none"> complètement.</p>
                       </div>
-                      <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'><a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="../pages/service.html">our services</a></div>
+                      <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                        <a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="{{ route('about.home') }}">A propos de nous</a>
+                      </div>
                     </div>
                   </div>
                   <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
                 </div>
               </div>
+
               <div class="swiper-slide"> <img class="header-slider" src="{{ asset('assets/img/transit/headers/header-5.jpg') }}" alt="image" />
                 <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
                   <div class="d-flex flex-center vh-100">
