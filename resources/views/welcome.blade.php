@@ -90,14 +90,14 @@
 
                 <div class="row align-items-center">
                     <div class="col-md-4 text-md-end">
-                        <h5 class="ls-2 mb-3">we're creative</h5>
-                        <p class="mb-0">We are full-service digital marketing agency<br class="d-none d-xl-block" /> in Atlanta, and we’re also one of the top<br class="d-none d-xl-block" />graphic design firms because we<br class="d-none d-xl-block" /> draw to projects that challenge<br class="d-none d-sm-block" /> our creative work.</p>
+                        <h5 class="ls-2 mb-3">nous sommes créatifs</h5>
+                        <p class="mb-0">Nous sommes une société du secteur des<br class="d-none d-xl-block" /> Nouvelles Technologies de l'Information<br class="d-none d-xl-block" />et de la Communication qui crée<br class="d-none d-xl-block" /> des solutions numériques<br class="d-none d-sm-block" /> pour le public.</p>
                     </div>
                     <div class="col-md-4 px-lg-4 my-4 my-md-0"><img class="rounded w-100 w-sm-75 w-md-100" src="{{ asset('assets/img/transit/about-us-5.jpg') }}" alt="" /></div>
 
                     <div class="col-md-4 text-md-start">
-                        <h5 class="ls-2 mb-3">We're friendly</h5>
-                        <p class="mb-0">We’re proud of our work to accomplish and<br class="d-none d-xl-block" /> much of the credit goes to our amazing<br class="d-none d-xl-block" /> and unique culture which helps us to<br class="d-none d-xl-block" /> come together to overcome all of<br class="d-none d-xl-block" /> our challanging times.</p>
+                        <h5 class="ls-2 mb-3">Nous sommes sympathiques</h5>
+                        <p class="mb-0">Nous sommes fiers du travail que nous accomplissons et une grande partie du mérite<br class="d-none d-xl-block" /> revient à notre culture étonnante et<br class="d-none d-xl-block" /> unique qui nous aide à nous rassembler<br class="d-none d-xl-block" /> et surmonter toute difficulté.</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section class="py-8 py-md-10 text-center">
-            <div class="bg-holder" style="background-image:url({{ asset('assets/img/transit/backgrounds/our-video-bg.jpg') }});background-position: 63% 50%;"></div>
+            <div class="bg-holder" style="background-image:url({{ asset('assets/img/transit/backgrounds/our-video-bg.png') }});background-position: 63% 50%;"></div>
             <!--/.bg-holder-->
 
             <div class="container">
@@ -117,12 +117,12 @@
                     <div class="col-lg-8">
                         <div class="row align-items-center">
                             <div class="col-md-5 text-md-end">
-                                <h2 class="font-base text-white mb-0 fs-3 lh-1"><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0}'>Watch our</span><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>video</span></h2>
+                                <h2 class="font-base text-white mb-0 fs-3 lh-1"><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0}'>Voir notre</span><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>vidéo</span></h2>
                             </div>
                             <div class="col-md-2 my-3 my-md-0"><a class="video-modal btn btn-outline-white hvr-sweep-top rounded-circle p-0 btn-play mx-auto" href="#!" data-bigpicture="{&quot;ytSrc&quot;:&quot;jlWMTNZNOc0&quot;}"><span class="fas fa-play" data-fa-transform="grow-1 right-2"></span></a></div>
                             <div class="col-md-5 text-md-start">
                                 <div class="overflow-hidden">
-                                    <p class="text-white mb-0" data-zanim-xs='{"from":{"opacity":0,"x":30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>Promote your company<br />Creating your own <br />slogan here</p>
+                                    <p class="text-white mb-0" data-zanim-xs='{"from":{"opacity":0,"x":30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>Découvrez notre<br /> slogan qui est :<br />&laquo; Servir avec du style ! &raquo;</p>
                                 </div>
                             </div>
                         </div>
@@ -141,10 +141,10 @@
             <div class="row text-center mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
               <div class="col">
                 <div class="overflow-hidden">
-                  <h2 class="fs-sm-5 mb-2" data-zanim-xs='{"duration":1.5,"delay":0}'>Why choose us</h2>
+                  <h2 class="fs-sm-5 mb-2" data-zanim-xs='{"duration":1.5,"delay":0}'>Qui sommes-nous</h2>
                 </div>
                 <div class="overflow-hidden">
-                  <p class="fs--1 text-uppercase text-black ls-1 mb-0" data-zanim-xs='{"duration":1.5,"delay":0.1}'>Choosing an agency is tough. <br class="d-block d-sm-none" />let us convince you</p>
+                  <p class="fs--1 text-uppercase text-black ls-1 mb-0" data-zanim-xs='{"duration":1.5,"delay":0.1}'>Choisir une agence est difficile. <br class="d-block d-sm-none" />laissez-nous vous convaincre</p>
                 </div>
                 <div class="overflow-hidden">
                   <hr class="hr-short bg-black" data-zanim-xs='{"duration":1.5,"delay":0.2}' />
@@ -154,27 +154,27 @@
 
             <div class="row text-center text-md-start">
               <div class="col-sm-6 col-md-4 px-lg-4 pt-md-3 pt-lg-0 pb-lg-4 h-100 feature-item position-relative">
-                <h5 class="ps-lg-3">Dedicated</h5>
+                <h5 class="ps-lg-3">Amour</h5>
                 <hr class="hr-feature d-block d-sm-none bg-black mt-0 mb-2" />
                 <div class="border-lg-top border-lg-end py-lg-3 ps-lg-0 line-indicator line-indicator-top line-indicator-top-1">
                   <div class="checked-indicator checked-indicator-top"><span class="fas fa-check" data-fa-transform="shrink-2"></span></div>
-                  <p class="px-lg-3 mb-0">Reign is a team of dedicated members <br class="d-block d-sm-none" /> towards their projects and clients.</p>
+                  <p class="px-lg-3 mb-0">Chez nous, tout se fait par amour. <br class="d-block d-sm-none" /> L'amour pour les gens, pour notre travail et pour nos produits.</p>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 px-lg-4 pt-3 pt-sm-0 pt-md-3 pt-lg-0 pb-lg-4 h-100 feature-item position-relative">
-                <h5 class="ps-lg-3">Professional</h5>
+                <h5 class="ps-lg-3">Intégrité</h5>
                 <hr class="hr-feature d-block d-sm-none border-black mt-0 mb-2" />
                 <div class="border-lg-top border-lg-end py-lg-3 ps-lg-0 line-indicator line-indicator-top line-indicator-top-2">
                   <div class="checked-indicator checked-indicator-top"><span class="fas fa-check" data-fa-transform="shrink-2"></span></div>
-                  <p class="px-lg-3 mb-md-0">We are all professionals and ready to <br class="d-block d-sm-none" />provide projects quickly and efficiently.</p>
+                  <p class="px-lg-3 mb-md-0">Nous respectons nos engagements envers le public, nos clients, nos partenaires ; <br class="d-block d-sm-none" />et entre collègues.</p>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 px-lg-4 pt-3 pt-lg-0 pb-lg-4 h-100 feature-item position-relative">
-                <h5 class="ps-lg-3">Experienced</h5>
+                <h5 class="ps-lg-3">Professionnalisme</h5>
                 <hr class="hr-feature d-block d-sm-none border-black mt-0 mb-2" />
                 <div class="border-lg-top border-lg-end py-lg-3 ps-lg-0 line-indicator line-indicator-top line-indicator-top-3">
                   <div class="checked-indicator checked-indicator-top"><span class="fas fa-check" data-fa-transform="shrink-2"></span></div>
-                  <p class="px-lg-3 mb-md-0">Our team is well trained, experienced <br class="d-block d-sm-none" />and know what we are doing.</p>
+                  <p class="px-lg-3 mb-md-0">Nous sommes tous des professionnels et prêts à <br class="d-block d-sm-none" />réaliser des projets rapidement et efficacement.</p>
                 </div>
               </div>
               <div class="col-12 my-3 d-none d-md-block">
