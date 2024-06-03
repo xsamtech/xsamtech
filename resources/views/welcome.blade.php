@@ -3,104 +3,105 @@
 @section('guest-content')
 
         <section class="py-0 overflow-hidden">
-          <div class="swiper theme-slider" data-swiper='{"autoplay":true,"loop":true,"loopedSlides":5,"slideToClickedSlide":true}'>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img class="header-slider" src="{{ asset('assets/img/transit/background-14.jpg') }}" alt="image" />
-                <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
-                  <div class="d-flex flex-center vh-100">
-                    <div class="header-overlay"></div>
-                    <div class="header-text">
-                      <div class="overflow-hidden">
-                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>La tech à votre service</h1>
-                      </div>
-                      <div class="overflow-hidden">
-                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'> santé, éducation, nourriture <br class="d-block d-md-none">et être utile à la société.</p>
-                      </div>
-                      <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                        <a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="{{ route('products.home') }}">nos produits</a>
-                      </div>
+            <div class="swiper theme-slider" data-swiper='{"autoplay":true,"loop":true,"loopedSlides":5,"slideToClickedSlide":true}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="header-slider" src="{{ asset('assets/img/transit/background-14.jpg') }}" alt="image" />
+                        <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
+                            <div class="d-flex flex-center vh-100">
+                                <div class="header-overlay"></div>
+                                <div class="header-text">
+                                    <div class="overflow-hidden">
+                                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>La tech à votre service</h1>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'> santé, éducation, nourriture <br class="d-block d-md-none">et être utile à la société.</p>
+                                    </div>
+                                    <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                                        <a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="{{ route('products.home') }}">nos produits</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
-                </div>
-              </div>
 
-              <div class="swiper-slide"><img class="header-slider" src="{{ asset('assets/img/transit/headers/landing7-new.jpg') }}" alt="image" />
-                <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
-                  <div class="d-flex flex-center vh-100">
-                    <div class="header-overlay"></div>
-                    <div class="header-text">
-                      <div class="overflow-hidden">
-                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>Des outils très simples</h1>
-                      </div>
-                      <div class="overflow-hidden">
-                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'> nous travaillons à vous faciliter la vie <br class="d-block d-md-none"> complètement.</p>
-                      </div>
-                      <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                        <a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="{{ route('about.home') }}">A propos de nous</a>
-                      </div>
+                    <div class="swiper-slide"><img class="header-slider" src="{{ asset('assets/img/transit/headers/landing7-new.jpg') }}" alt="image" />
+                        <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
+                            <div class="d-flex flex-center vh-100">
+                                <div class="header-overlay"></div>
+                                <div class="header-text">
+                                    <div class="overflow-hidden">
+                                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>Des outils très simples</h1>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'> nous travaillons à vous faciliter la vie <br class="d-block d-md-none"> complètement.</p>
+                                    </div>
+                                    <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                                        <a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="{{ route('about.home') }}">A propos de nous</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
-                </div>
-              </div>
 
-              <div class="swiper-slide"> <img class="header-slider" src="{{ asset('assets/img/transit/headers/header-5.jpg') }}" alt="image" />
-                <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
-                  <div class="d-flex flex-center vh-100">
-                    <div class="header-overlay"></div>
-                    <div class="header-text">
-                      <div class="overflow-hidden">
-                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>Future is here</h1>
-                      </div>
-                      <div class="overflow-hidden">
-                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'>Take action and be a <br class="d-block d-md-none"> part of it</p>
-                      </div>
-                      <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'><a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="../pages/service.html">our services</a></div>
+                    <div class="swiper-slide"> <img class="header-slider" src="{{ asset('assets/img/transit/gallery/g6.jpg') }}" alt="image" />
+                        <div class="header-overlay text-center" data-zanim-timeline='{"delay":0.1}'>
+                            <div class="d-flex flex-center vh-100">
+                                <div class="header-overlay"></div>
+                                <div class="header-text">
+                                    <div class="overflow-hidden">
+                                        <h1 class="display-3 text-white fs-5 fs-md-7" data-zanim-xs='{"duration":2,"delay":0}'>Bossons avec compétitivité</h1>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <p class="text-uppercase text-400 ls-3 mt-2" data-zanim-xs='{"duration":2,"delay":0.1}'>Au public, nous offrons toujours <br class="d-block d-md-none"> le meilleur service</p>
+                                    </div>
+                                    <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'><a class="btn btn-sm btn-outline-light hvr-sweep-top mt-5 px-4" href="#">contactez-nous</a></div>
+                                </div>
+                            </div>
+                            <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#about-us"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a></div>
                 </div>
-              </div>
+                <div class="swiper-nav">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
-            <div class="swiper-nav">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
         </section>
 
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section class="pt-3 pt-lg-5 pb-6 pb-lg-8 text-center" style="scroll-margin-top:-25px" id="about-us">
-          <div class="container">
-            <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-              <div class="col">
-                <div class="overflow-hidden">
-                  <h2 class="fs-sm-5 mb-2" data-zanim-xs='{"duration":1.5,"delay":0}'>about us</h2>
+            <div class="container">
+                <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                    <div class="col">
+                        <div class="overflow-hidden">
+                            <h2 class="fs-sm-5 mb-2" data-zanim-xs='{"duration":1.5,"delay":0}'>A propos de nous</h2>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="text-uppercase fs--1 text-black ls-1 mb-0" data-zanim-xs='{"duration":1.5,"delay":0.1}'>Notre entreprise, en termes simples</p>
+                        </div>
+                        <div class="overflow-hidden">
+                            <hr class="hr-short border-black" data-zanim-xs='{"duration":1.5,"delay":0.2}' />
+                        </div>
+                    </div>
                 </div>
-                <div class="overflow-hidden">
-                  <p class="text-uppercase fs--1 text-black ls-1 mb-0" data-zanim-xs='{"duration":1.5,"delay":0.1}'>Our company, in the simplest terms</p>
-                </div>
-                <div class="overflow-hidden">
-                  <hr class="hr-short border-black" data-zanim-xs='{"duration":1.5,"delay":0.2}' />
-                </div>
-              </div>
-            </div>
 
-            <div class="row align-items-center">
-              <div class="col-md-4 text-md-end">
-                <h5 class="ls-2 mb-3">we're creative</h5>
-                <p class="mb-0">We are full-service digital marketing agency<br class="d-none d-xl-block" /> in Atlanta, and we’re also one of the top<br class="d-none d-xl-block" />graphic design firms because we<br class="d-none d-xl-block" /> draw to projects that challenge<br class="d-none d-sm-block" /> our creative work.</p>
-              </div>
-              <div class="col-md-4 px-lg-4 my-4 my-md-0"><img class="rounded w-100 w-sm-75 w-md-100" src="{{ asset('assets/img/transit/about-us-5.jpg') }}" alt="" /></div>
-              <div class="col-md-4 text-md-start">
-                <h5 class="ls-2 mb-3">We're friendly</h5>
-                <p class="mb-0">We’re proud of our work to accomplish and<br class="d-none d-xl-block" /> much of the credit goes to our amazing<br class="d-none d-xl-block" /> and unique culture which helps us to<br class="d-none d-xl-block" /> come together to overcome all of<br class="d-none d-xl-block" /> our challanging times.</p>
-              </div>
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-md-end">
+                        <h5 class="ls-2 mb-3">we're creative</h5>
+                        <p class="mb-0">We are full-service digital marketing agency<br class="d-none d-xl-block" /> in Atlanta, and we’re also one of the top<br class="d-none d-xl-block" />graphic design firms because we<br class="d-none d-xl-block" /> draw to projects that challenge<br class="d-none d-sm-block" /> our creative work.</p>
+                    </div>
+                    <div class="col-md-4 px-lg-4 my-4 my-md-0"><img class="rounded w-100 w-sm-75 w-md-100" src="{{ asset('assets/img/transit/about-us-5.jpg') }}" alt="" /></div>
+
+                    <div class="col-md-4 text-md-start">
+                        <h5 class="ls-2 mb-3">We're friendly</h5>
+                        <p class="mb-0">We’re proud of our work to accomplish and<br class="d-none d-xl-block" /> much of the credit goes to our amazing<br class="d-none d-xl-block" /> and unique culture which helps us to<br class="d-none d-xl-block" /> come together to overcome all of<br class="d-none d-xl-block" /> our challanging times.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- end of .container-->
+            <!-- end of .container-->
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
@@ -108,27 +109,27 @@
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section class="py-8 py-md-10 text-center">
-          <div class="bg-holder" style="background-image:url({{ asset('assets/img/transit/backgrounds/our-video-bg.jpg') }});background-position: 63% 50%;"></div>
-          <!--/.bg-holder-->
+            <div class="bg-holder" style="background-image:url({{ asset('assets/img/transit/backgrounds/our-video-bg.jpg') }});background-position: 63% 50%;"></div>
+            <!--/.bg-holder-->
 
-          <div class="container">
-            <div class="row justify-content-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-              <div class="col-lg-8">
-                <div class="row align-items-center">
-                  <div class="col-md-5 text-md-end">
-                    <h2 class="font-base text-white mb-0 fs-3 lh-1"><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0}'>Watch our</span><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>video</span></h2>
-                  </div>
-                  <div class="col-md-2 my-3 my-md-0"><a class="video-modal btn btn-outline-white hvr-sweep-top rounded-circle p-0 btn-play mx-auto" href="#!" data-bigpicture="{&quot;ytSrc&quot;:&quot;jlWMTNZNOc0&quot;}"><span class="fas fa-play" data-fa-transform="grow-1 right-2"></span></a></div>
-                  <div class="col-md-5 text-md-start">
-                    <div class="overflow-hidden">
-                      <p class="text-white mb-0" data-zanim-xs='{"from":{"opacity":0,"x":30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>Promote your company<br />Creating your own <br />slogan here</p>
+            <div class="container">
+                <div class="row justify-content-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                    <div class="col-lg-8">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 text-md-end">
+                                <h2 class="font-base text-white mb-0 fs-3 lh-1"><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0}'>Watch our</span><span class="d-block" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>video</span></h2>
+                            </div>
+                            <div class="col-md-2 my-3 my-md-0"><a class="video-modal btn btn-outline-white hvr-sweep-top rounded-circle p-0 btn-play mx-auto" href="#!" data-bigpicture="{&quot;ytSrc&quot;:&quot;jlWMTNZNOc0&quot;}"><span class="fas fa-play" data-fa-transform="grow-1 right-2"></span></a></div>
+                            <div class="col-md-5 text-md-start">
+                                <div class="overflow-hidden">
+                                    <p class="text-white mb-0" data-zanim-xs='{"from":{"opacity":0,"x":30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>Promote your company<br />Creating your own <br />slogan here</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- end of .container-->
+            <!-- end of .container-->
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
