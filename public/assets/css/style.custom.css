@@ -1,20 +1,9 @@
 /*
     Custom styles
 
-    Copyright (c) 2023 Xsam Technologies and/or its affiliates. All rights reserved.
+    Copyright (c) 2024 Xsam Technologies and/or its affiliates. All rights reserved.
 */
 /********** Typographie **********/
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-pre,
-code,
-kbd,
-samp {
-	font-family: 'Poppins', sans-serif;
-}
-
 pre {
     font-family: inherit!important;
     font-size: inherit!important;
@@ -23,26 +12,6 @@ pre {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-h1, .h1, 
-h2, .h2, 
-h3, .h3, 
-h4, .h4, 
-h5, .h5, 
-h6, .h6,
-h1 a, .h1 a,
-h2 a, .h2 a,
-h3 a, .h3 a,
-h4 a, .h4 a,
-h5 a, .h5 a,
-h6 a, .h6 a {
-	font-family: 'Poppins', sans-serif;
-}
-
-p, li {
-	font-family: 'Poppins', sans-serif;
-	line-height: 1.9;
 }
 
 /********** jQuery Ellipsis **********/
@@ -140,19 +109,19 @@ p, li {
 }
 
 /* Text */
-.xsam-purple-text {
+.xsam-text-purple {
     color: #9c00ff!important;
 }
 
-.xsam-pink-text {
+.xsam-text-pink {
     color: #d400d7!important;
 }
 
-.xsam-blue-text {
+.xsam-text-blue {
     color: #179aff!important;
 }
 
-.xsam-grey-text {
+.xsam-text-grey {
     color: #ababab!important;
 }
 
