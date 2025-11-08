@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="xsamtech.com">
         <meta name="keywords" content="@lang('miscellaneous.keywords')">
+        <meta name="description" content="">
         <meta name="xsam-url" content="{{ getWebURL() }}">
         <meta name="xsam-api-url" content="{{ getApiURL() }}">
         <meta name="xsam-ref" content="{{ (!empty(Auth::user()) ? Auth::user()->api_token : 'nat') . '-' . (request()->has('app_id') ? request()->get('app_id') : 'nai') }}">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="description" content="">
 
         <!-- ===============================================-->
         <!--                   Favicons                     -->
@@ -46,84 +46,10 @@
 @if (!empty($exception))
             {{ $exception->getStatusCode() . ' - ' . __('notifications.' . $exception->getStatusCode() . '_title') }}
 @else
-    @if (!empty($error_title) || \Session::has('error_message') || \Session::has('error_message_login'))
-            {{ !empty($error_title) ? $error_title : (\Session::has('error_message_login') ? preg_match('/~/', \Session::get('error_message_login')) ? explode(', ', explode('~', \Session::get('error_message_login'))[0])[2] : \Session::get('error_message_login') : (\Session::has('error_message') ? (preg_match('/~/', \Session::get('error_message')) ? explode('-', explode('~', \Session::get('error_message'))[0])[2] : \Session::get('error_message')) : '')) }}
-    @endif
-
-    @if (empty($error_title) && Session::get('error_message') == null)
-      @if (Route::is('login'))
-        @if (request()->has('check_param'))
-          @if (request()->get('check_param') == 'email')
-            @lang('auth.verified-email')
-          @endif
-          @if (request()->get('check_param') == 'phone')
-            @lang('auth.verified-phone')
-          @endif
-        @else
-            Xsam / @lang('miscellaneous.menu.login_register')
-        @endif
-      @endif
-
-      @if (Route::is('register'))
-        @if (!empty($token_sent))
-            @lang('auth.otp-code')
-        @else
-          @if (!empty($temporary_user))
-            @lang('miscellaneous.account.personal_infos.title')
-          @else
-          @if (!empty($request->redirect))
-            @if (request()->has('check'))
-              @if (request()->get('check') == 'email')
-            @lang('auth.verify-email')
-              @endif
-              @if (request()->get('check') == 'phone')
-            @lang('auth.verify-phone')
-              @endif
-            @else
-            @lang('auth.reset-password')
-            @endif
-          @else
-            @lang('auth.register')
-          @endif
-        @endif
-      @endif
-		@endif
-
-		@if (Route::is('password.request') || !empty($former_password))
-      @if (request()->has('check'))
-        @if (request()->get('check') == 'email')
-            @lang('auth.verify-email')
-        @endif
-        @if (request()->get('check') == 'phone')
-            @lang('auth.verify-phone')
-        @endif
-        @else
-            @lang('auth.reset-password')
-        @endif
-		  @endif
-
-      @if (!empty($token_sent))
-            @lang('auth.otp-code')
-      @endif
-    @endif
-
-    @if (Route::is('home'))
-            Xsam Technologies
-    @endif
-    @if (Route::is('about.home'))
-            Nos produits
-    @endif
-    @if (Route::is('services.home'))
-            Nos services
-    @endif
-    @if (Route::is('event.home'))
-            Evénements
-    @endif
-    @if (Route::is('career.home'))
-            Faire carrière chez Xsam
-    @endif
-    @if (!empty($entity_title))
-            {{ $entity_title }}
+    @if (!empty($page_title))
+            {{ $page_title }}
+    @else
+        Xsam Technologies
     @endif
 @endif
         </title>

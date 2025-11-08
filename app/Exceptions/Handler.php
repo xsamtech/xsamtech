@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
+/**
+ * @author Xanders
+ * @see https://team.xsamtech.com/xanderssamoth
+ */
 class Handler extends ExceptionHandler
 {
     /**

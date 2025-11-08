@@ -142,3 +142,5 @@ Route::get('/group/{entity}/{id}', [AdminController::class, 'groupEntityDatas'])
 Route::get('/miscellaneous', [AdminController::class, 'miscellaneous'])->name('admin.miscellaneous.home');
 Route::get('/miscellaneous/{entity}', [AdminController::class, 'miscellaneousEntity'])->name('admin.miscellaneous.entity');
 Route::get('/miscellaneous/{entity}/{id}', [AdminController::class, 'miscellaneousEntityDatas'])->whereNumber('id')->name('admin.miscellaneous.entity.datas');
+
+require __DIR__.'/auth.php';
