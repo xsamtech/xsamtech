@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @author Xanders
  * @see https://www.linkedin.com/in/xanders-samoth-b2770737/
@@ -12,621 +13,666 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'app_name' => 'DikiTivi',
-    'coming_soon' => 'You will watch your TV very soon!',
-    'welcome' => 'Welcome to DikiTivi',
-    'keywords' => 'dikitivi,diki,tivi,video,film,series,episode,cartoon,documentary,preaching',
-    'all_right_reserved' => 'All right reserved',
-    'follow_us' => 'Follow us:',
-    'call_us' => 'Call us:',
-    'toggle_theme' => 'Toggle theme',
+    'app_name' => 'Xsam Technologies',
+    'coming_soon' => 'Espace en construction',
+    'welcome' => 'Bienvenue sur Xsam Technologies',
+    'keywords' => 'xsamtech,xsam,tech,technologies,numérique,développement,appli,application,web,mobile',
+    'all_right_reserved' => 'Tous droits réservés',
+    'follow_us' => 'Suivez-nous :',
+    'call_us' => 'Appelez-nous :',
+    'toggle_theme' => 'Changer de thème',
     'theme' => [
-        'light' => 'Light',
-        'dark' => 'Dark',
-        'auto' => 'Automatic',
+        'light' => 'Clair',
+        'dark' => 'Sombre',
+        'auto' => 'Automatique',
     ],
-    'your_language' => 'Your language',
-    'verified' => 'Verified',
-    'unverified' => 'Not verified',
-    'awaiting_approval' => 'Awaiting Approval',
-    'views' => 'Views',
-    'likes' => 'Likes',
-    'iam_child' => 'Youth',
-    'iam_adult' => 'All medias',
-    'no_parental_code' => 'I don\'t have a parental code',
-    'back_home' => 'Return to the home',
-    'back_list' => 'Return to the list',
-    'back_form' => 'Return to the form',
-    'back_toc' => 'Return to the table of content',
-    'see_all_notifications' => 'View all notifications',
-    'loading' => 'Loading...',
-    'yes' => 'Yes',
-    'no' => 'No',
-    'for_child' => 'For children',
-    'for_adult' => 'For adults',
-    'settings' => 'Settings',
-    'refresh' => 'Refresh',
-    'connection' => 'Connection',
-    'register' => 'Register',
-    'send' => 'Send',
-    'start' => 'Start',
-    'add' => 'Add',
-    'buy' => 'Buy now',
-    'check' => 'Verify',
-    'check_now' => 'Verify now',
-    'choose' => 'Choose',
-    'validated' => 'Validated',
-    'invalid' => 'Invalid',
-    'issued_on' => 'Issued in Kinshasa, on',
-    'registered' => 'Registered',
-    'update' => 'Update',
-    'change' => 'Change',
-    'logout' => 'Sign out',
-    'register_update' => 'Register update',
-    'change_image' => 'Edit the picture',
-    'crop_before_save' => 'Crop the image before saving',
-    'cancel' => 'Cancel',
-    'details' => 'Details',
-    'attention_delete' => 'Attention delete',
-    'confirm_delete' => 'Do you really want to delete?',
-    'delete_success' => 'Delete success',
-    'delete_canceled' => 'Delete canceled',
-    'delete_failed' => 'Delete failed',
-    'delete' => 'Delete',
-    'reset' => 'Reset',
-    'open' => 'Open',
-    'close' => 'Close',
-    'download' => 'Download',
+    'your_language' => 'Votre langue',
+    'verified' => 'Vérifié',
+    'unverified' => 'Non vérifié',
+    'awaiting_approval' => 'En attente d’approbation',
+    'views' => 'Vues',
+    'likes' => 'J’aime',
+    'back_home' => 'Retour à l’accueil',
+    'back_list' => 'Retourner à la liste',
+    'back_form' => 'Retourner au formulaire',
+    'back_toc' => 'Retourner à la table des matières',
+    'see_all_notifications' => 'Voir toutes les notifications',
+    'loading' => 'Chargement ...',
+    'yes' => 'Oui',
+    'no' => 'Non',
+    'for_child' => 'Pour enfants',
+    'for_adult' => 'Pour adultes',
+    'settings' => 'Paramètres',
+    'refresh' => 'Actualiser',
+    'connection' => 'Connexion',
+    'register' => 'Enregistrer',
+    'send' => 'Envoyer',
+    'start' => 'Commencer',
+    'add' => 'Ajouter',
+    'buy' => 'Acheter',
+    'check' => 'Vérifier',
+    'check_now' => 'Vérifier maintenant',
+    'choose' => 'Choisir',
+    'validated' => 'Validé',
+    'invalid' => 'Non valide',
+    'issued_on' => 'Délivrée à Kinshasa, le',
+    'registered' => 'Enregistré',
+    'update' => 'Mettre à jour',
+    'change' => 'Modifier',
+    'logout' => 'Déconnexion',
+    'register_update' => 'Enregistrer les modifications',
+    'change_image' => 'Modifier la photo',
+    'crop_before_save' => 'Recadrer l’image avant de l’enregistrer',
+    'cancel' => 'Annuler',
+    'details' => 'Détails',
+    'alert' => [
+        'oups' => 'Oups !',
+        'perfect' => 'Parfait !',
+        'yes' => [
+            'account' => [
+                'activate' => 'Oui, réactiver',
+                'deactivate' => 'Oui, désactiver'
+            ],
+            'role' => 'Oui, changer',
+            'status' => 'Oui, changer',
+            'deactive' => 'Oui, désactiver',
+            'lock' => 'Oui, bloquer',
+            'unlock' => 'Oui, activer',
+            'delete' => 'Oui, supprimer',
+            'presence_payment' => 'Oui, changer'
+        ],
+        'attention' => [
+            'account' => [
+                'activate' => 'Réactivation de compte',
+                'deactivate' => 'Désactivation de compte'
+            ],
+            'role' => 'Attention changement de rôle',
+            'status' => 'Attention changement d\'état',
+            'deactive' => 'Attention désactivation',
+            'lock' => 'Attention blocage',
+            'unlock' => 'Attention activation',
+            'delete' => 'Attention suppression',
+            'presence_payment' => 'Attention nouveau changement'
+        ],
+        'confirm' => [
+            'account' => [
+                'activate' => 'Voulez-vous vraiment réactiver ?',
+                'deactivate' => 'Voulez-vous vraiment désactiver ?'
+            ],
+            'role' => 'Voulez-vous vraiment changer le rôle ?',
+            'status' => 'Voulez-vous vraiment changer l\'état ?',
+            'deactive' => 'Voulez-vous vraiment désactiver ?',
+            'lock' => 'Voulez-vous vraiment bloquer ?',
+            'unlock' => 'Voulez-vous vraiment activer ?',
+            'delete' => 'Voulez-vous vraiment supprimer ?',
+            'presence_payment' => 'Acceptez-vous ce nouveau changement ?'
+        ],
+        'success' => [
+            'account' => [
+                'activate' => 'Réactivation réussie',
+                'deactivate' => 'Désactivation réussie'
+            ],
+            'role' => 'Changement de rôle réussi',
+            'status' => 'Changement d\'état réussi',
+            'deactive' => 'Désactivation réussie',
+            'lock' => 'Blocage réussi',
+            'unlock' => 'Activation réussie',
+            'delete' => 'Suppression réussie',
+            'presence_payment' => 'Changement effectué'
+        ],
+        'canceled' => [
+            'account' => [
+                'activate' => 'Réactivation annulée',
+                'deactivate' => 'Désactivation annulée'
+            ],
+            'role' => 'Changement de rôle annulé',
+            'status' => 'Changement d\'état annulé',
+            'deactive' => 'Désactivation annulée',
+            'lock' => 'Blocage annulé',
+            'unlock' => 'Activation annulée',
+            'delete' => 'Suppression annulée',
+            'presence_payment' => 'Changement annulé'
+        ],
+        'failed' => [
+            'account' => [
+                'activate' => 'Réactivation échouée',
+                'deactivate' => 'Désactivation échouée'
+            ],
+            'role' => 'Changement de rôle échoué',
+            'status' => 'Changement d\'état échoué',
+            'deactive' => 'Désactivation échouée',
+            'lock' => 'Blocage échoué',
+            'unlock' => 'Activation échouée',
+            'delete' => 'Suppression échouée',
+            'presence_payment' => 'Changement annulé'
+        ],
+    ],
+    'delete' => 'Supprimer',
+    'reset' => 'Réinitialiser',
+    'open' => 'Ouvrir',
+    'close' => 'Fermer',
+    'waiting_register' => 'Enregistrement en attente ...',
+    'download' => 'Télécharger',
     'upload' => [
-        'use_camera' => 'Use camera',
-        'upload_file' => 'Upload file',
-        'choose_existing_file' => 'Choose existing file',
+        'multiple_files' => 'Uploader des fichiers',
+        'use_camera' => 'Utiliser caméra',
+        'upload_document' => 'Uploader document',
+        'upload_image' => 'Uploader image (Photo/Video)',
+        'upload_video' => 'Uploader un video',
+        'register_audio' => 'Enregistrer un audio',
+        'upload_audio' => 'Uploader un audio',
+        'choose_existing_file' => 'Choisir fichier existant'
     ],
-    'activate' => 'Activate',
-    'deactivate' => 'Deactivate',
-    'lock' => 'Lock',
-    'unlock' => 'Unlock',
-    'search' => 'Search...',
-    'mark_read' => 'Mark as read',
-    'mark_all_read' => 'Mark all as read',
-    'empty_list' => 'The list is empty',
-    'see_more' => 'See more',
-    'see_less' => 'See less',
-    'show' => 'Show',
-    'entry' => 'entry',
-    'entries' => 'entries',
-    'error_label' => 'Error:',
-    'message_label' => 'Message:',
-    'message_sent' => 'Message sent',
-    'data_updated' => 'Data updated',
+    'activate' => 'Activer',
+    'deactivate' => 'Désactiver',
+    'lock' => 'Bloquer',
+    'unlock' => 'Débloquer',
+    'search_input' => 'Rechercher ici',
+    'search' => 'Rechercher ...',
+    'no_result' => 'Il n\'y a aucun résultat',
+    'search_result' => 'Résultat de la recherche',
+    'search_result_for' => 'Résultat de la recherche pour : ',
+    'mark_read' => 'Marquer comme lue',
+    'mark_all_read' => 'Tout marquer comme lue',
+    'empty_list' => 'La liste est vide',
+    'see_more' => 'Voir plus',
+    'see_less' => 'Voir moins',
+    'show' => 'Afficher',
+    'entry' => 'entrée',
+    'entries' => 'entrées',
+    'error_label' => 'Erreur :',
+    'message_label' => 'Message :',
+    'message_sent' => 'Message envoyé',
+    'data_updated' => 'Données mises à jour',
     'recto' => 'Recto',
     'verso' => 'Verso',
+    'period' => [
+        'word' => [
+            'day' => 'Jour',
+            'week' => 'Semaine',
+            'month' => 'Mois',
+            'quarter' => 'Trimestre',
+            'half_year' => 'Semestre',
+            'year' => 'Année',
+        ],
+        'expression' => [
+            'daily' => 'Par jour',
+            'weekly' => 'Par semaine',
+            'monthly' => 'Par mois',
+            'quarterly' => 'Par trimestre',
+            'half_yearly' => 'Par semestre',
+            'yearly' => 'Par an',
+        ],
+        'adjectif' => [
+            'daily_masculine' => 'Journalier',
+            'daily_feminine' => 'Journalière',
+            'weekly_masculine' => 'Hebdomadaire',
+            'weekly_feminine' => 'Hebdomadaire',
+            'monthly_masculine' => 'Mensuel',
+            'monthly_feminine' => 'Mensuelle',
+            'quarterly_masculine' => 'Trimestriel',
+            'quarterly_feminine' => 'Trimestrielle',
+            'half_yearly_masculine' => 'Semestriel',
+            'half_yearly_feminine' => 'Semestrielle',
+            'yearly_masculine' => 'Annuel',
+            'yearly_feminine' => 'Annuelle',
+        ],
+    ],
     'day' => [
         'complete' => [
-            'sunday' => 'Sunday',
-            'monday' => 'Monday',
-            'tuesday' => 'Tuesday',
-            'wednesday' => 'Wednesday',
-            'thursday' => 'Thursday',
-            'friday' => 'Friday',
-            'saturday' => 'Saturday',
+            'sunday' => 'Dimanche',
+            'monday' => 'Lundi',
+            'tuesday' => 'Mardi',
+            'wednesday' => 'Mercredi',
+            'thursday' => 'Jeudi',
+            'friday' => 'Vendredi',
+            'saturday' => 'Samedi',
         ],
         'abbreviation' => [
-            'sunday' => 'Sun',
-            'monday' => 'Mon',
-            'tuesday' => 'Tue',
-            'wednesday' => 'Wed',
-            'thursday' => 'Thu',
-            'friday' => 'Fri',
-            'saturday' => 'Sat',
+            'sunday' => 'Dim',
+            'monday' => 'Lun',
+            'tuesday' => 'Mar',
+            'wednesday' => 'Mer',
+            'thursday' => 'Jeu',
+            'friday' => 'Ven',
+            'saturday' => 'Sam'
         ],
     ],
     'month' => [
         'complete' => [
-            'january' => 'January',
-            'february' => 'February',
-            'march' => 'March',
-            'april' => 'April',
-            'may' => 'May',
-            'june' => 'June',
-            'july' => 'July',
-            'august' => 'August',
-            'september' => 'September',
-            'october' => 'October',
-            'november' => 'November',
-            'december' => 'December',
+            'january' => 'Janvier',
+            'february' => 'Février',
+            'march' => 'Mars',
+            'april' => 'Avril',
+            'may' => 'Mai',
+            'june' => 'Juin',
+            'july' => 'Juillet',
+            'august' => 'Août',
+            'september' => 'Septembre',
+            'october' => 'Octobre',
+            'november' => 'Novembre',
+            'december' => 'Décembre'
         ],
         'abbreviation' => [
             'january' => 'Jan',
-            'february' => 'Feb',
+            'february' => 'Fév',
             'march' => 'Mar',
-            'april' => 'Apr',
-            'may' => 'May',
-            'june' => 'Jun',
-            'july' => 'Jul',
-            'august' => 'Aug',
+            'april' => 'Avr',
+            'may' => 'Mai',
+            'june' => 'Juin',
+            'july' => 'Juil',
+            'august' => 'Aoû',
             'september' => 'Sep',
             'october' => 'Oct',
             'november' => 'Nov',
-            'december' => 'Dec',
+            'december' => 'Déc'
         ],
     ],
 
     // ===== TIME COUNT
-    'on_date' => 'on',
-    'at_time' => 'at',
-    'now' => 'now',
-    'a_minute_ago' => 'a minute ago',
-    '30_minutes_ago' => '30 minutes ago',
-    'an_hour_ago' => 'an hour ago',
-    'today' => 'today',
-    'yesterday' => 'yesterday',
-    'before_yesterday' => 'before yesterday',
+    'on_date' => 'le',
+    'at_time' => 'à',
+    'now' => 'maintenant',
+    'a_minute_ago' => 'il y a une minute',
+    '30_minutes_ago' => 'il y a 30 minutes',
+    'an_hour_ago' => 'il y a une heure',
+    'today' => 'aujourd’hui',
+    'yesterday' => 'hier',
+    'before_yesterday' => 'avant-hier',
 
     // ===== VOCABULARY
-    'colon_after_word' => ':',
-    'semicolon_after_word' => ';',
-    'the_masculine' => 'the',
-    'the_feminine' => 'the',
-    'the_masculine_before_vowel' => 'the',
-    'the_feminine_before_vowel' => 'the',
-    'the_plural' => 'the',
-    'a_masculine' => 'a',
-    'a_feminine' => 'a',
-    'a_masculine_before_vowel' => 'an',
-    'a_feminine_before_vowel' => 'an',
+    'colon_after_word' => ' :',
+    'semicolon_after_word' => ' ;',
+    'the_masculine' => 'le',
+    'the_feminine' => 'la',
+    'the_masculine_before_vowel' => 'l’',
+    'the_feminine_before_vowel' => 'l’',
+    'the_plural' => 'les',
+    'a_masculine' => 'un',
+    'a_feminine' => 'une',
+    'a_masculine_before_vowel' => 'un',
+    'a_feminine_before_vowel' => 'une',
     'a_plural' => '',
-    'ones_i_masculine' => 'my',
-    'ones_i_feminine' => 'my',
-    'ones_i_masculine_plural' => 'my',
-    'ones_i_feminine_plural' => 'my',
-    'ones_you_masculine' => 'your',
-    'ones_you_feminine' => 'your',
-    'ones_you_masculine_plural' => 'your',
-    'ones_you_feminine_plural' => 'your',
-    'ones_he' => 'his',
-    'ones_she' => 'her',
-    'ones_it' => 'its',
-    'ones_he_plural' => 'his',
-    'ones_she_plural' => 'her',
-    'ones_it_plural' => 'its',
-    'ones_they_plural_one' => 'their',
-    'ones_they_plural_many' => 'their',
-    'a_new_masculine' => 'a new',
-    'a_new_feminine' => 'a new',
-    'day_singular' => 'day',
-    'day_plural' => 'days',
-    'month_singular' => 'month',
-    'month_plural' => 'months',
-    'year_singular' => 'year',
-    'year_plural' => 'years',
+    'ones_i_masculine' => 'mon',
+    'ones_i_feminine' => 'ma',
+    'ones_i_masculine_plural' => 'mes',
+    'ones_i_feminine_plural' => 'mes',
+    'ones_you_masculine' => 'votre',
+    'ones_you_feminine' => 'votre',
+    'ones_you_masculine_plural' => 'vos',
+    'ones_you_feminine_plural' => 'vos',
+    'ones_he' => 'son',
+    'ones_she' => 'sa',
+    'ones_it' => 'son',
+    'ones_he_plural' => 'ses',
+    'ones_she_plural' => 'ses',
+    'ones_it_plural' => 'ses',
+    'ones_they_plural_one' => 'leur',
+    'ones_they_plural_many' => 'leurs',
+    'a_new_masculine' => 'un nouveau',
+    'a_new_feminine' => 'une nouvelle',
+    'day_singular' => 'jour',
+    'day_plural' => 'jours',
+    'month_singular' => 'mois',
+    'month_plural' => 'mois',
+    'year_singular' => 'année',
+    'year_plural' => 'années',
 
     // ===== LOGIN PAGE
-    'login_title1' => 'Log in',
-    'login_title2' => 'Identify yourself',
-    'login_title3' => 'Put the code to manage your children',
-    'login_description' => 'Your data is safe with us. So you need to identify yourself to be sure it’s you.',
-    'login_username' => 'Phone number, E-mail or Username',
-    'remember_me' => 'Remember me',
-    'forgotten_password' => 'Forgotten password?',
-    'not_member' => 'Not a member?',
-    'signup_with' => 'or sign up with:',
-    'go_register' => 'I don’t have an account',
+    'login_title1' => 'Se connecter',
+    'login_title2' => 'Identifiez-vous',
+    'login_description' => 'Vos données sont sécurisées avec nous. Alors vous devez vous identifier pour être sûr que c’est bien vous.',
+    'login_username' => 'N° de téléphone, nom d’utilisateur ou e-mail',
+    'remember_me' => 'Rester connecté',
+    'forgotten_password' => 'Mot de passe oublié ?',
+    'forgotten_password_info' => 'Indiquez-nous simplement votre adresse e-mail (ou n° de téléphone) et nous vous enverrons un code pour changer votre mot de passe.',
+    'reset_password_info' => 'Veuillez créer un mot de passe sécurisé et que vous n’oublierez pas cette fois.',
+    'not_member' => 'Pas encore membre ?',
+    'signup_with' => 'ou s’inscrire avec :',
+    'go_register' => 'Je n’ai pas de compte',
 
     // ===== REGISTER PAGE
-    'register_title1' => 'Sign up',
-    'register_title2' => 'Register to start',
-    'register_title3' => 'Write the code you received',
-    'serial_number' => 'Serial number',
-    'names' => 'Names',
+    'register_title1' => 'S’inscrire',
+    'register_title2' => 'Cliquez ici pour vous inscrire',
+    'register_title3' => 'Ecrivez le code que vous avez reçu',
+    'serial_number' => 'N° de série',
+    'names' => 'Noms',
     'tnameMess' => 'Message',
     'option' => 'Option',
-    'firstname' => 'First name',
-    'lastname' => 'Last name',
-    'surname' => 'Surname',
-    'parental_code' => 'Parental code',
-    'lastname_surname' => 'Last name / Surname',
-    'nationality' => 'Nationality',
-    'p_o_box' => 'P.O. box',
-    'gender_title' => 'Gender',
-    'gender1' => 'Male',
-    'gender2' => 'Female',
-    'birth_city' => 'Birth city',
+    'about_user' => [
+        'label' => 'A propos de moi',
+        'placeholder' => 'Parlez-nous de vous ou de votre entreprise',
+    ],
+    'firstname' => 'Prénom',
+    'lastname' => 'Nom',
+    'surname' => 'Post-nom',
+    'lastname_surname' => 'Nom / Post-nom',
+    'nationality' => 'Nationalité',
+    'p_o_box' => 'Boîte postale',
+    'gender_title' => 'Sexe',
+    'gender1' => 'Homme',
+    'gender2' => 'Femme',
+    'birth_city' => 'Ville de naissance',
     'birth_date' => [
-        'label' => 'Birth date',
-        'day' => 'Day',
-        'month' => 'Month',
-        'year' => 'Year',
+        'label' => 'Date de naissance',
+        'label2' => 'Naissance',
+        'day' => 'Jour',
+        'month' => 'Mois',
+        'year' => 'Année',
     ],
-    'birth_city_date' => 'Birthplace and date',
-    'country' => 'Country',
-    'choose_country' => 'Choose country',
-    'phone_code' => 'Phone code',
-    'phone' => 'Phone number',
+    'birth_city_date' => 'Lieu et date de naissance',
+    'country' => 'Pays',
+    'choose_country' => 'Choisir pays',
+    'phone_code' => 'Code tél.',
+    'phone_number' => 'N° de téléphone',
+    'phone' => 'Téléphone',
     'email' => 'E-mail',
+    'email_phone' => 'E-mail / Phone',
     'address' => [
-        'title' => 'Address',
-        'placeholder' => 'Write address...',
-        'residence' => 'Current residence',
-        'legal' => 'Legal address',
-        'type' => 'Address type',
-        'line1' => 'Address line 1',
-        'line2' => 'Address line 2 (Optional)',
-        'neighborhood' => 'Neighborhood',
-        'area' => 'Area',
-        'city' => 'City',
+        'title' => 'Adresse',
+        'placeholder' => 'Ecrire adresse ...',
+        'residence' => 'Résidence actuelle',
+        'legal' => 'Adresse légale',
+        'type' => 'Type d’adresse',
+        'line1' => 'Adresse ligne 1',
+        'line2' => 'Adresse ligne 2 (Facultative)',
+        'neighborhood' => 'Quartier',
+        'area' => 'Commune/Zone',
+        'province' => 'Province',
+        'territory' => 'Territoire',
+        'city' => 'Ville',
     ],
-    'addresses' => 'Addresses',
-    'username' => 'User name',
+    'addresses' => 'Adresses',
+    'username' => 'Pseudo',
     'password' => [
-        'label' => 'Password',
-        'error' => 'Must have at least 8 characters, be alphanumeric, have at least one uppercase and have a special character',
+        'label' => 'Mot de passe',
+        'error' => 'Doit avoir au moins 8 caractère, être alphanumérique, avoir au moins une lettre majuscule et avoir un caractère spécial',
     ],
     'confirm_password' => [
-        'label' => 'Confirm password',
-        'error' => 'Your confirmation doesn’t match the new password',
+        'label' => 'Confirmer mot de passe',
+        'error' => 'Votre confirmation ne correspond pas au mot de passe',
     ],
-    'choose_role' => 'Choose a role',
-    'use_email' => 'Use the Email address',
-    'use_phone' => 'Use the phone number',
-    'go_login' => 'Already have an account',
-    'api_token' => 'Your key for using of APIs',
-    'amount' => 'Amount',
-    'currency' => 'Choose currency',
-    'usd' => 'American dollar',
-    'cdf' => 'Congolese franc',
-    'category' => [
-        'animation' => 'Animation',
-        'preach' => 'Preach',
+    'choose_role' => 'Choisir un rôle',
+    'status' => [
+        'created' => 'Créé',
+        'activated' => 'Activé',
+        'disabled' => 'Désactivé',
+        'blocked' => 'Bloqué',
     ],
-    // Alert message
-    'adult_content' => 'This content is not for your age',
-    'registered_data' => 'Data registered',
-    'no_data' => 'This datas don’t exist',
-    'required_fields' => 'Please check the required fields',
-    'bank_transaction_description' => 'Money transaction',
-    'transaction_waiting' => 'Please confirm the message from your operator on your phone. Then press the button below.',
-    'transaction_done' => 'Your transaction is complete!',
-    'transaction_failed' => 'Failed to send your payment.',
-    'transaction_type_error' => 'Please select transaction type',
-    'new_partner_message' => 'You can now log in as a partner with your phone number. Temporary password:',
-
-    // ===== TYPES
-    'media_types' => [
-        'feature_film' => 'Feature film',
-        'cartoons' => 'Cartoons',
-        'tv_series' => 'TV series',
-        'episode' => 'Episode',
-        'tv_program' => 'TV program',
-        'music_album' => 'Music album',
-        'song' => 'Song'
-    ],
-
-    // ===== STATUSES
-    'user_statuses' => [
-        'activated' => 'Activated',
-        'intermediate' => 'Intermediate',
-        'disabled' => 'Disabled',
-        'blocked' => 'Blocked',
-    ],
+    'go_login' => 'J’ai déjà un compte',
+    'api_token' => 'Votre clé pour utiliser les APIs',
+    'amount' => 'Montant',
+    'amount_to_pay' => 'Montant à payer',
+    'currency' => 'Choisir devise',
+    'usd' => 'Dollar américain',
+    'cdf' => 'Franc congolais',
+    'cart' => 'Panier',
+    'pay' => 'Payer',
+    'comments' => '{0} Pas de commentaire|{1} Un commentaire|[2,*] :count commentaires',
+    'items' => '{0} Aucun article|{1} Un article|[2,*] :count articles',
+    'recently_added_items' => '{1} Article récemment ajouté.|[2,*] Articles récemment ajoutés.',
 
     // ===== NAVIGATION MENU
     'menu' => [
-        'home' => 'Home',
-        'login' => 'Log in',
-        'live' => 'Live',
-        'films' => 'Films',
-        'cartoons' => 'Cartoons',
-        'series' => 'TV series',
-        'programs' => 'Programs',
-        'preach' => 'Preach',
-        'songs' => 'Music',
-        'books' => 'Books',
-        'account' => 'My account',
-        'about' => 'About',
-        'terms_of_use' => 'Terms',
-        'privacy_policy' => 'Privacy',
-        'pricing' => 'Premium pricing',
+        'home' => 'Accueil',
+        'dashboard' => 'Tableau de bord',
+        'login' => 'Se connecter',
+        'about' => 'A propos',
+        'terms_of_use' => 'Conditions d’utilisation',
+        'privacy_policy' => 'Politique de confidentialité',
         'contact' => 'Contact',
+        'pricing' => 'Tarifs',
+        'gallery' => 'Galerie',
+        'account' => [
+            'title' => 'Mon compte',
+            'preferences' => 'Préférences',
+            'cart' => 'Mon panier',
+            'payments' => 'Mes paiements',
+        ],
+        'messenger' => 'Messagerie',
         'notifications' => 'Notifications',
-        'donate' => 'Donate',
-        'controller' => [
-            'youth' => 'Youth content',
-            'adult' => 'Adult content'
+        'public' => [
+            'services' => 'Services',
+            'products' => 'Produits',
+            'events' => 'Événements',
+            'career' => 'Carrière',
+        ],
+        'developer' => [
+            'apis' => 'APIs',
+            'integrations' => 'Intégrations',
+        ],
+        'team' => [
+            'members' => [
+                'title' => 'Membres',
+                'job_applications' => 'Demandes d’emploi',
+            ],
+            'product' => [
+                'title' => 'Produit',
+                'tasks' => 'Tâches',
+                'reports' => 'Rapports',
+            ],
+            'service' => [
+                'title' => 'Service',
+                'tasks' => 'Tâches',
+                'reports' => 'Rapports',
+            ],
+        ],
+        'logistics' => [
+            'motor' => [
+                'title' => 'Engins',
+                'vehicle' => 'Véhicules',
+                'other' => 'Autres engins',
+                'part' => 'Pièces de moteur',
+            ],
+            'equipment' => [
+                'title' => 'Matériels',
+                'office' => 'Bureau',
+                'cleaning' => 'Nettoyage',
+                'repair' => 'Réparation',
+                'decor_event' => 'Décor & événementiel',
+                'health_relax' => 'Détente & santé',
+                'manufacture' => 'Fabrication',
+                'building' => 'Construction',
+            ],
+            'material' => [
+                'title' => 'Matériaux',
+                'manufacture' => 'Fabrication',
+                'building' => 'Construction',
+            ],
+            'documents' => 'Documents',
+        ],
+        'financier' => [
+            'expenses' => [
+                'title' => 'Dépenses',
+                'inventories' => 'Inventaires',
+            ],
+            'payments' => 'Paiements',
+        ],
+        'executive' => [
+            'product' => [
+                'title' => 'Produit',
+                'budget' => 'Budget',
+                'financial_report' => 'Rapport financier',
+                'team' => 'Équipe',
+            ],
+            'service' => [
+                'title' => 'Service',
+                'budget' => 'Budget',
+                'financial_report' => 'Rapport financier',
+                'team' => 'Équipe',
+            ],
+            'job_applications' => 'Demandes d’emploi',
+            'staff' => [
+                'title' => 'Personnel',
+                'organization_chart' => 'Organigramme',
+                'executives' => 'Executifs',
+                'financiers' => 'Financiers',
+                'logistics' => 'Logistiques',
+                'administrators' => 'Administrateurs',
+            ],
+        ],
+        'admin' => [
+            'group' => [
+                'title' => 'Groupe',
+                'role' => [
+                    'title' => 'Rôle',
+                    'members' => 'Membres',
+                ],
+                'type' => 'Type',
+                'status' => 'État',
+                'third_party_service' => 'Services tiers',
+            ],
+            'category' => [
+                'title' => 'Catégorie',
+                'product' => [
+                    'title' => 'Produit',
+                    'about' => 'A propos',
+                    'team_members' => 'Membres de l’équipe',
+                    'terms_of_use' => 'Conditions d’utilisation',
+                    'privacy_policy' => 'Politique de confidentialité',
+                    'help_center' => 'Centre d’aide',
+                    'faq' => 'FAQ',
+                ],
+                'service' => [
+                    'title' => 'Service',
+                    'about' => 'A propos',
+                    'team_members' => 'Membres de l’équipe',
+                    'customer' => 'Client',
+                ],
+            ],
+            'miscellaneous' => [
+                'title' => 'Divers',
+                'deadline' => 'Échéance',
+                'event' => 'Événement',
+            ],
         ],
     ],
 
     // ===== EVERY ROLES PAGES
     // Account settings
     'account' => [
-        'watchlist' => 'My watchlist',
-        'my_videos' => 'My videos',
-        'parental_control' => 'Parental control',
-        'recently_watched_videos' => 'Recently watched videos',
-        'videos' => [
-            'add' => 'Add a video',
-            'edit' => 'Update the video'
-        ],
-        'add_child' => [
-            'message' => 'By adding your children, you allow them to log in to watch DikiTivi videos and you will be able to see what they have watched.',
-            'link' => 'Add a child'
-        ],
-        'on_going' => 'Account awaiting activation',
+        'on_going' => 'Compte en attente d’activation',
         'deactivated' => [
-            'message' => 'You have deactivated your account',
-            'link' => 'Disable my account',
+            'message' => 'Vous avez désactivé votre compte',
+            'link' => 'Désactiver mon compte',
         ],
-        'locked' => 'Your account is blocked by the administrator',
+        'locked' => 'Votre compte est bloqué par l’administrateur',
         'delete' => [
-            'confirm' => 'Are you sure you want to delete your account?<strong>This action is irreversible!</strong>',
+            'confirm' => 'Voulez-vous vraiment supprimer votre compte ?<strong>Cette action est irreversible !</strong>',
             'link' => 'Delete account',
         ],
         'personal_infos' => [
-            'title' => 'Personal Infos',
-            'change_avatar' => 'Change the avatar',
-            'link' => 'Register update',
+            'title' => 'Infos personnelles',
+            'change_avatar' => 'Modifier l’avatar',
+            'link' => 'Enregistrer mise à jour',
         ],
         'update_password' => [
-            'title' => 'Change password',
-            'former_password' => 'Former password',
-            'new_password' => 'New password',
-            'confirm_password' => 'Confirm new password',
+            'title' => 'Modifier mot de passe',
+            'former_password' => 'Ancien mot de passe',
+            'new_password' => 'Nouveau mot de passe',
+            'confirm_password' => 'Confirmer nouveau mot de passe',
         ],
         'identity_document' => [
-            'title' => 'Identity document',
+            'title' => 'Pièce d’identité',
             'choose_type' => [
-                'title' => 'Choose the type of identity document',
-                'identity_card' => 'Identity card',
-                'voter_card' => 'Voter card',
-                'passport' => 'Passport',
-                'driving_license' => 'Driving license',
-                'other' => 'Other',
+                'title' => 'Choisir le type de pièce d’identité',
+                'identity_card' => 'Carte d’identité',
+                'voter_card' => 'Carte d’électeur',
+                'passport' => 'Passeport',
+                'driving_license' => 'Permis de conduire',
+                'other' => 'Autre',
             ],
-            'other_descriprion' => 'Describe your identity document',
-            'click_to_change' => 'Click on photo to edit',
-            'message1' => 'To be able to add your videos, you must provide your identity document which will be analyzed by our administrators. Then, if your identity is approved, you will be able to add your videos.',
-            'message2' => 'Also note that, to ensure that you comply with our terms of use, your videos will be analyzed before they become visible to the public.',
+            'other_descriprion' => 'Décrivez votre pièce d’identité',
+            'click_to_change' => 'Cliquer sur la photo pour modifier',
+            'message1' => 'Pour être en mesure d’ajouter vos vidéos, vous devez mettre votre pièce identité qui sera analysé par nos administrateurs. Ensuite, si votre identité est approuvée, vous serez e mesure d’ajouter vos vidéos.',
+            'message2' => 'Notez aussi que, pour être sûr que vous respectez nos conditions d’utilisation, vos vidéos seront analysées avant qu’elles deviennent visibles pour le public.',
         ],
         'payment' => [
             'link' => 'Buy',
             'send_money' => [
-                'title' => 'Send money',
-                'description' => 'Choose payment method',
+                'title' => 'Envoyer argent',
+                'description' => 'Choisir mode de paiement',
                 'mobile_money' => 'Mobile money',
-                'bank_card' => 'Bank card',
+                'bank_card' => 'Carte bancaire'
             ],
-        ],
-        'child' => [
-            'title' => 'Manage your children',
-            'description' => 'Add your children to allow them to play media while keeping an eye on what they are watching.',
-            'add' => 'Add a child',
-            'click_to_change_picture' => 'Click to change the picture',
         ],
     ],
 
-    // ===== CONTROLLER PAGES
-    'controller' => [
+    // ===== DEVELOPER PAGES
+    'developer' => [
         'home' => [
-            'title' => 'Controller area',
+            'title' => 'Espace de développeur',
+        ],
+    ],
+
+    // ===== TEAM PAGES
+    'developer' => [
+        'home' => [
+            'title' => 'L’équipe Xsam',
+        ],
+    ],
+
+    // ===== LOGISTICS PAGES
+    'logistics' => [
+        'home' => [
+            'title' => 'Espace logistique',
+        ],
+    ],
+
+    // ===== FINANCIER PAGES
+    'financier' => [
+        'home' => [
+            'title' => 'Espace du financier',
+        ],
+    ],
+
+    // ===== EXECUTIVE PAGES
+    'executive' => [
+        'home' => [
+            'title' => 'Espace exécutif',
+        ],
+    ],
+
+    // ===== ADMIN PAGES
+    'admin' => [
+        'home' => [
+            'title' => 'Espace de l’administrateur',
         ],
     ],
 
     // ===== PUBLIC PAGES
     'public' => [
-        'add_watchlist' => 'Add to my watchlist',
-        'withdraw_watchlist' => 'Withraw from my watchlist',
-        'send_like' => 'I like',
-        'retire_like' => 'I don’t like',
-        'watch_now' => 'Watch now',
-
         // Footer
         'footer' => [
-            'useful_links' => 'Useful links',
-            'head_office' => [
-                'title' => 'Our head office',
-                'address' => '13, Du Grand Seminaire Street',
-                'phone' => '+243 856 438 822',
-                'email' => 'contact@dikitivi.com'
+            'our_vision' => [
+                'title' => 'Notre vision',
+                'content' => 'Nous visons un monde où toutes les personnes, sans distinction, sont en mesure de profiter d’une <strong>vie descente</strong>, pour eux et leurs proches, grâce à la <strong>technologie</strong>.',
+            ],
+            'links_group' => [
+                'company' => 'Compagnie',
+                'catalog' => 'Catalogue',
+                'on_the_blog' => 'Sur le blog',
             ],
             'newsletter' => [
                 'title' => 'Newsletter',
-                'text' => 'Subscribe to receive our most relevant information.',
-                'email' => 'Your email',
-                'submit' => 'Send',
+                'text' => 'Abonnez-vous pour recevoir nos infos les plus pertinentes.',
+                'email' => 'Votre e-mail',
+                'submit' => 'Envoyer'
             ],
         ],
 
         // Home
-        'home' => [
-            'hero' => [
-                'title' => 'Christian medias',
-                'content' => 'To get started, <a href="' . route('login') . '" class="text-decoration-underline" style="color: #abff67;">log in</a> or choose your age group in order to find the media that suit you.',
-                'link1' => 'See all media',
-                'link2' => 'Youth'
-            ],
-            'download_mobile_app' => [
-                'title' => 'Download the DikiTivi mobile app',
-                'content' => 'The DikiTivi mobile app helps you follow your videos on your smartphone, tablet or smart-TV and benefit from all our advantages.',
-            ],
-            'pricing' => [
-                'title' => 'Pricing plan',
-                'content' => 'You can now purchase a plan to follow premium videos.',
-            ],
-            'trends' => [
-                'title' => 'Current trends',
-            ],
-            'films' => [
-                'title' => 'Recent films',
-            ],
-            'lives' => [
-                'title' => 'Live',
-            ],
-            'series' => [
-                'title' => 'Recent series',
-            ],
-            'programs' => [
-                'title' => 'Recent programs',
-            ],
-            'songs' => [
-                'title' => 'Recent songs',
-            ],
-        ],
+        'home' => [],
 
         // About
         'about' => [
-            'title' => 'About DikiTivi',
-            'description' => 'DikiTivi is a Christian TV channel aiming to offer parents a platform allowing them to find, <i>for themselves and for their children</i>, healthy, fun and Divine media.',
-            'other_links' => [
-                'title' => 'Other links',
-                'link1' => 'Terms of use',
-                'link2' => 'Privacy policy',
-                'link3' => 'Help center',
-                'link4' => 'FAQ',
-            ],
-
-            // About content
-            'content' =>
-            [
-                'titles' =>
-                [
-                    [
-                        'ref' => 'story',
-                        'title' => 'Our story',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => 'Year 2019',
-                                'content' => 'Receipt of the mandate for the “DikiTivi” project.',
-                            ],
-                            [
-                                'subtitle' => 'August 20, 2020',
-                                'content' => 'Creation of the DikiTivi YouTube channel.',
-                            ],
-                            [
-                                'subtitle' => 'September 6, 2020',
-                                'content' => 'Creation of the DikiTivi Facebook channel.',
-                            ],
-                            [
-                                'subtitle' => 'December 25, 2020',
-                                'content' => 'Uploading of the first videos.',
-                            ],
-                            [
-                                'subtitle' => 'March 17, 2021',
-                                'content' => 'Launch of the first version of WebTV DikiTivi with Bourdak corporation.',
-                            ],
-                            [
-                                'subtitle' => 'June 30, 2022',
-                                'content' => 'First live on YouTube.',
-                            ],
-                            [
-                                'subtitle' => 'December 2023',
-                                'content' => 'Decision to expand DikiTivi’s audience to children of all ages and create the DikiTivi application.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'mission',
-                        'title' => 'Our mission',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Offer children and families fun, informative, healthy and Divine programs, allowing them to have fun and ensure their spiritual growth in Christ;',
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Bring Christ, make him known, make him loved by very young children and young people through the media;',
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Support parents who want to raise their children according to true moral, Divine and Christian values, by constituting themselves as a media resource.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'vision',
-                        'title' => 'Our vision',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Making children of all ages and all nations disciples of Christ and vessels of honor.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'legal_notice',
-                        'title' => 'Legal Notices',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'This website is published by the Divines Kids International Ministry. Kinshasa, DRC',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'publication_director',
-                        'title' => 'Publication Director',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Jean Loup Atambutu as Coordinator of the DIKI project.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'images',
-                        'title' => 'Photos',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'The photos used on the site and the application are original royalty-free or purchased mainly on specialized sites with exploitation rights. In this case, they are used for purely illustrative purposes and the people represented in the photos are models only.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'intellectual_property',
-                        'title' => 'Intellectual property',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'All rights reserved. Any reproduction is prohibited without authorization. All texts, photos, videos, mp3s, data, logos and other elements reproduced on this site are protected by copyright according to the rules of Congolese and international law.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'hoster',
-                        'title' => 'Hoster',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'The <strong>dikitivi.com</strong> site, the application, as well as the audio and video files are hosted on servers that we rent from the company “Hostinger” and “Amazon”.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'internet_broadcasting',
-                        'title' => 'Internet broadcasting',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Videos broadcast on the Internet (“replay” service) are hosted and distributed by YouTube. We invite you to consult the general conditions of use of YouTube at this address: <a href="https://policies.google.com/privacy?hl=en" class="dktv-text-blue">https ://policies.google.com/privacy?hl=en</a>.',
-                            ]
-                        ]
-                    ]
-                ]
-            ],
+            'title' => 'A propos de Xsam Technologies',
+            'description' => '',
 
             // Terms of use
             'terms_of_use' => [
-                'title' => 'Terms of use',
-                'description' => 'By using our services, you agree to our terms of use. So we suggest you take some time to read these conditions, because you are about to enter into a binding contract.',
+                'title' => 'Conditions d’utilisation',
+                'description' => 'En utilisant nos services, vous acceptez nos conditions d’utilisation. Alors nous vous suggérons de prendre un peu de votre temps pour lire ces conditions, car vous êtes sur le point de conclure un contrat qui vous engage.',
                 'titles' =>
                 [
                     [
@@ -645,243 +691,23 @@ return [
 
             // Privacy policy
             'privacy_policy' => [
-                'title' => 'Privacy policy',
-                'description' => 'Welcome to the privacy policy and protection of your personal data at DikiTivi.',
+                'title' => 'Politique de confidentialité',
+                'description' => 'Bienvenue dans la politique de confidentialité et protection de vos données personnelles chez Xsam Technologies.',
                 'titles' =>
                 [
                     [
-                        'ref' => 'information_collection',
-                        'title' => 'Information collection',
+                        'ref' => '',
+                        'title' => '',
                         'contents' =>
                         [
                             [
                                 'subtitle' => '',
-                                'content' => 'We collect information when you make a donation on our site or register to write a comment, to contact a speaker on the site or to register for an event or service offered. The information collected is only that which you have provided to us and varies from case to case.'
+                                'content' => ''
                             ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'As part of a donation for example, we ask you for your country (required), your first and last name (required), your email address (required), your telephone number, your postal address, your organization if applicable , and your payment method.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Additionally, we automatically receive and record information from your internet browser, including your IP address, software, hardware, and the page you are visiting.'
-                            ]
                         ]
-                    ],
-                    [
-                        'ref' => 'data_use',
-                        'title' => 'Use of information',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => 'Any information we collect from you may be used to:',
-                                'content' => 'Customize your experience and respond to your individual needs;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Improve our website;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Improve service to our users and donors and ensure their needs are taken care of;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Contact you by email or SMS;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Administer a contest, promotion, or survey.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'third_party_disclosure',
-                        'title' => 'Disclosure to third parties',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties. This does not include trusted third parties who assist us in operating our website, so long as those parties agree to keep this information confidential.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'We believe it is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of our terms of service. use, or when the law requires us to do so.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Non-private information, however, may be provided to other parties primarily for purposes of improving our website.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'data_safety',
-                        'title' => 'Privacy',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'We implement a variety of security measures to keep your personal information safe. Only employees who need to perform a specific job have access to personally identifiable information. Computers and servers used to store personally identifiable information are kept in a secure environment.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'No banking information is recorded in our databases other than bank details.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Do we use cookies? Yes. Our cookies improve access to our site and identify repeat visitors. Additionally, our cookies improve the user experience by tracking and targeting their interests. However, this use of cookies is in no way linked to any personally identifiable information on our site.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'data_retirement',
-                        'title' => 'Right of opposition, withdrawal of your information',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'We are committed to offering you a right of opposition and withdrawal regarding your personal information. The right to object is understood as the possibility offered to Internet users to refuse that their personal information be used for certain purposes mentioned during collection. The right of withdrawal is understood as being the possibility offered to Internet users to request that their personal information no longer appear, for example, in a mailing list.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'To exercise this right to withdraw your information, please write to us by going to the contact page of our website.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'donation_refund',
-                        'title' => 'Withdrawal period, cancellation and reimbursement of your donation',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Online payments are not subject to a right of withdrawal. All payment is firm and final.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Payments made by donors do not give rise to any refund.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'access_right',
-                        'title' => 'Permission to access',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'We undertake to recognize a right of access and rectification to those concerned wishing to consult, modify or even delete information concerning them.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'To exercise this right of access, please write to us by going to the contact page of our website.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'unsuscribe',
-                        'title' => 'Unsubscribe',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'We use the email address you provide to send you information and updates related to your donation, news from our ministry (if you have opted in to receive news from us), etc. If at any time you would like to unsubscribe from receiving emails, detailed unsubscribe instructions are included at the bottom of each email, or email us at<strong>contact @dikitivi.com</strong>.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'consent',
-                        'title' => 'Consent',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'By using our site or application, you implicitly agree to our general conditions of use, as well as those of YouTube.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'We invite you to consult the YouTube general conditions of use at this address: <a href="https://policies.google.com/privacy?hl=en" class="dktv-text-blue">https://policies.google.com/privacy?hl=en</a>'
-                            ]
-                        ]
-                    ],
+                    ]
                 ]
             ],
-
-            // Pricing
-            'pricing' => [
-                'title' => 'Our pricing plan',
-            ],
-
-            // Contact
-            'contact' => [
-                'title' => 'Contact Us',
-                'description' => 'You can either write to us directly here, or by email, or you can go to our address below',
-                'message_subject' => 'Subject',
-                'message_content' => 'Message content'
-            ],
-
-            // Donate
-            'donate' => [
-                'title' => 'Make a donation to support DikiTivi',
-                'description' => 'By supporting the DikiTivi ministry, you not only contribute to the improvement of life of the people of God, but also you contribute to the help that the ministry brings to the ophelines and the poor.',
-                'content1' => 'If it’s money you want to send, just select the payment method; then you send it directly online.',
-                'content2' => 'If you want to donate something other than money, just enter a description of your donation.',
-                'anonyme' => 'Make your donation',
-                'partner' => 'Become a partner',
-                'your_identity' => 'Your identity',
-                'period' => [
-                    'title' => 'Period',
-                    'choose' => 'Choose a period',
-                    'unique' => 'One-time payment'
-                ],
-                'send_money' => [
-                    'title' => 'Send money',
-                    'description' => 'Choose payment method',
-                    'mobile_money' => 'Mobile money',
-                    'bank_card' => 'Bank card',
-                ],
-                'other_donation' => [
-                    'title' => 'Other donation',
-                    'description' => 'Description of your donation',
-                ],
-            ],
-        ],
-
-        // Media
-        'media' => [
-            'categories' => 'Categories',
-            'all_episodes' => 'Episodes of the series',
-            'all_songs' => 'Songs from the album',
-
-            'label' => [
-                'title' => 'Title',
-                'description' => 'Description',
-                'author' => 'Author',
-                'series' => 'Series',
-                'album' => 'Album',
-                'artist' => 'Artist(s)',
-                'writter' => 'Written by',
-                'director' => 'Directed by',
-                'published_date' => 'Publishing date',
-            ],
-            'datas' => [
-                'return_link' => [
-                    'film' => 'See all films',
-                    'episode' => 'Other episodes of the series',
-                    'series' => 'See all TV series',
-                    'song' => 'Other songs of the album',
-                    'album' => 'See all songs',
-                    'program' => [
-                        'default' => 'See all programs',
-                        'preach' => 'See other preaches',
-                    ],
-                ],
-            ],
-        ],
-
-        // Lives
-        'lives' => [
-            '' => '',
         ],
     ],
 ];

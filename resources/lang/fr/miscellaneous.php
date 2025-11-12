@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @author Xanders
  * @see https://www.linkedin.com/in/xanders-samoth-b2770737/
@@ -12,10 +13,10 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'app_name' => 'DikiTivi',
-    'coming_soon' => 'Vous allez suivre votre télé très bientôt !',
-    'welcome' => 'Bienvenue sur DikiTivi',
-    'keywords' => 'dikitivi,diki,tivi,vidéo,film,séries,épisode,dessin animé,documentaire,prédication',
+    'app_name' => 'Xsam Technologies',
+    'coming_soon' => 'Espace en construction',
+    'welcome' => 'Bienvenue sur Xsam Technologies',
+    'keywords' => 'xsamtech,xsam,tech,technologies,numérique,développement,appli,application,web,mobile',
     'all_right_reserved' => 'Tous droits réservés',
     'follow_us' => 'Suivez-nous :',
     'call_us' => 'Appelez-nous :',
@@ -31,9 +32,6 @@ return [
     'awaiting_approval' => 'En attente d’approbation',
     'views' => 'Vues',
     'likes' => 'J’aime',
-    'iam_child' => 'Jeunesse',
-    'iam_adult' => 'Tous les médias',
-    'no_parental_code' => 'Je n\'ai pas de code parental',
     'back_home' => 'Retour à l’accueil',
     'back_list' => 'Retourner à la liste',
     'back_form' => 'Retourner au formulaire',
@@ -67,26 +65,113 @@ return [
     'crop_before_save' => 'Recadrer l’image avant de l’enregistrer',
     'cancel' => 'Annuler',
     'details' => 'Détails',
-    'attention_delete' => 'Attention suppression',
-    'confirm_delete' => 'Voulez-vous vraiment supprimer ?',
-    'delete_success' => 'Suppression réussie',
-    'delete_canceled' => 'Suppression annulée',
-    'delete_failed' => 'Suppression échouée',
+    'alert' => [
+        'oups' => 'Oups !',
+        'perfect' => 'Parfait !',
+        'yes' => [
+            'account' => [
+                'activate' => 'Oui, réactiver',
+                'deactivate' => 'Oui, désactiver'
+            ],
+            'role' => 'Oui, changer',
+            'status' => 'Oui, changer',
+            'deactive' => 'Oui, désactiver',
+            'lock' => 'Oui, bloquer',
+            'unlock' => 'Oui, activer',
+            'delete' => 'Oui, supprimer',
+            'presence_payment' => 'Oui, changer'
+        ],
+        'attention' => [
+            'account' => [
+                'activate' => 'Réactivation de compte',
+                'deactivate' => 'Désactivation de compte'
+            ],
+            'role' => 'Attention changement de rôle',
+            'status' => 'Attention changement d\'état',
+            'deactive' => 'Attention désactivation',
+            'lock' => 'Attention blocage',
+            'unlock' => 'Attention activation',
+            'delete' => 'Attention suppression',
+            'presence_payment' => 'Attention nouveau changement'
+        ],
+        'confirm' => [
+            'account' => [
+                'activate' => 'Voulez-vous vraiment réactiver ?',
+                'deactivate' => 'Voulez-vous vraiment désactiver ?'
+            ],
+            'role' => 'Voulez-vous vraiment changer le rôle ?',
+            'status' => 'Voulez-vous vraiment changer l\'état ?',
+            'deactive' => 'Voulez-vous vraiment désactiver ?',
+            'lock' => 'Voulez-vous vraiment bloquer ?',
+            'unlock' => 'Voulez-vous vraiment activer ?',
+            'delete' => 'Voulez-vous vraiment supprimer ?',
+            'presence_payment' => 'Acceptez-vous ce nouveau changement ?'
+        ],
+        'success' => [
+            'account' => [
+                'activate' => 'Réactivation réussie',
+                'deactivate' => 'Désactivation réussie'
+            ],
+            'role' => 'Changement de rôle réussi',
+            'status' => 'Changement d\'état réussi',
+            'deactive' => 'Désactivation réussie',
+            'lock' => 'Blocage réussi',
+            'unlock' => 'Activation réussie',
+            'delete' => 'Suppression réussie',
+            'presence_payment' => 'Changement effectué'
+        ],
+        'canceled' => [
+            'account' => [
+                'activate' => 'Réactivation annulée',
+                'deactivate' => 'Désactivation annulée'
+            ],
+            'role' => 'Changement de rôle annulé',
+            'status' => 'Changement d\'état annulé',
+            'deactive' => 'Désactivation annulée',
+            'lock' => 'Blocage annulé',
+            'unlock' => 'Activation annulée',
+            'delete' => 'Suppression annulée',
+            'presence_payment' => 'Changement annulé'
+        ],
+        'failed' => [
+            'account' => [
+                'activate' => 'Réactivation échouée',
+                'deactivate' => 'Désactivation échouée'
+            ],
+            'role' => 'Changement de rôle échoué',
+            'status' => 'Changement d\'état échoué',
+            'deactive' => 'Désactivation échouée',
+            'lock' => 'Blocage échoué',
+            'unlock' => 'Activation échouée',
+            'delete' => 'Suppression échouée',
+            'presence_payment' => 'Changement annulé'
+        ],
+    ],
     'delete' => 'Supprimer',
     'reset' => 'Réinitialiser',
     'open' => 'Ouvrir',
     'close' => 'Fermer',
+    'waiting_register' => 'Enregistrement en attente ...',
     'download' => 'Télécharger',
     'upload' => [
+        'multiple_files' => 'Uploader des fichiers',
         'use_camera' => 'Utiliser caméra',
-        'upload_file' => 'Télécharger fichier',
+        'upload_document' => 'Uploader document',
+        'upload_image' => 'Uploader image (Photo/Video)',
+        'upload_video' => 'Uploader un video',
+        'register_audio' => 'Enregistrer un audio',
+        'upload_audio' => 'Uploader un audio',
         'choose_existing_file' => 'Choisir fichier existant'
     ],
     'activate' => 'Activer',
     'deactivate' => 'Désactiver',
     'lock' => 'Bloquer',
     'unlock' => 'Débloquer',
+    'search_input' => 'Rechercher ici',
     'search' => 'Rechercher ...',
+    'no_result' => 'Il n\'y a aucun résultat',
+    'search_result' => 'Résultat de la recherche',
+    'search_result_for' => 'Résultat de la recherche pour : ',
     'mark_read' => 'Marquer comme lue',
     'mark_all_read' => 'Tout marquer comme lue',
     'empty_list' => 'La liste est vide',
@@ -101,6 +186,38 @@ return [
     'data_updated' => 'Données mises à jour',
     'recto' => 'Recto',
     'verso' => 'Verso',
+    'period' => [
+        'word' => [
+            'day' => 'Jour',
+            'week' => 'Semaine',
+            'month' => 'Mois',
+            'quarter' => 'Trimestre',
+            'half_year' => 'Semestre',
+            'year' => 'Année',
+        ],
+        'expression' => [
+            'daily' => 'Par jour',
+            'weekly' => 'Par semaine',
+            'monthly' => 'Par mois',
+            'quarterly' => 'Par trimestre',
+            'half_yearly' => 'Par semestre',
+            'yearly' => 'Par an',
+        ],
+        'adjectif' => [
+            'daily_masculine' => 'Journalier',
+            'daily_feminine' => 'Journalière',
+            'weekly_masculine' => 'Hebdomadaire',
+            'weekly_feminine' => 'Hebdomadaire',
+            'monthly_masculine' => 'Mensuel',
+            'monthly_feminine' => 'Mensuelle',
+            'quarterly_masculine' => 'Trimestriel',
+            'quarterly_feminine' => 'Trimestrielle',
+            'half_yearly_masculine' => 'Semestriel',
+            'half_yearly_feminine' => 'Semestrielle',
+            'yearly_masculine' => 'Annuel',
+            'yearly_feminine' => 'Annuelle',
+        ],
+    ],
     'day' => [
         'complete' => [
             'sunday' => 'Dimanche',
@@ -204,27 +321,31 @@ return [
     // ===== LOGIN PAGE
     'login_title1' => 'Se connecter',
     'login_title2' => 'Identifiez-vous',
-    'login_title3' => 'Mettez le code pour gérer vos enfants',
     'login_description' => 'Vos données sont sécurisées avec nous. Alors vous devez vous identifier pour être sûr que c’est bien vous.',
-    'login_username' => 'N° de téléphone, E-mail ou Pseudo',
-    'remember_me' => 'Se souvenir de moi',
+    'login_username' => 'N° de téléphone, nom d’utilisateur ou e-mail',
+    'remember_me' => 'Rester connecté',
     'forgotten_password' => 'Mot de passe oublié ?',
+    'forgotten_password_info' => 'Indiquez-nous simplement votre adresse e-mail (ou n° de téléphone) et nous vous enverrons un code pour changer votre mot de passe.',
+    'reset_password_info' => 'Veuillez créer un mot de passe sécurisé et que vous n’oublierez pas cette fois.',
     'not_member' => 'Pas encore membre ?',
     'signup_with' => 'ou s’inscrire avec :',
     'go_register' => 'Je n’ai pas de compte',
 
     // ===== REGISTER PAGE
     'register_title1' => 'S’inscrire',
-    'register_title2' => 'Inscrivez-vous pour commencer',
+    'register_title2' => 'Cliquez ici pour vous inscrire',
     'register_title3' => 'Ecrivez le code que vous avez reçu',
     'serial_number' => 'N° de série',
     'names' => 'Noms',
     'tnameMess' => 'Message',
     'option' => 'Option',
+    'about_user' => [
+        'label' => 'A propos de moi',
+        'placeholder' => 'Parlez-nous de vous ou de votre entreprise',
+    ],
     'firstname' => 'Prénom',
     'lastname' => 'Nom',
     'surname' => 'Post-nom',
-    'parental_code' => 'Code parental',
     'lastname_surname' => 'Nom / Post-nom',
     'nationality' => 'Nationalité',
     'p_o_box' => 'Boîte postale',
@@ -234,6 +355,7 @@ return [
     'birth_city' => 'Ville de naissance',
     'birth_date' => [
         'label' => 'Date de naissance',
+        'label2' => 'Naissance',
         'day' => 'Jour',
         'month' => 'Mois',
         'year' => 'Année',
@@ -242,8 +364,10 @@ return [
     'country' => 'Pays',
     'choose_country' => 'Choisir pays',
     'phone_code' => 'Code tél.',
-    'phone' => 'N° de téléphone',
+    'phone_number' => 'N° de téléphone',
+    'phone' => 'Téléphone',
     'email' => 'E-mail',
+    'email_phone' => 'E-mail / Phone',
     'address' => [
         'title' => 'Adresse',
         'placeholder' => 'Ecrire adresse ...',
@@ -254,6 +378,8 @@ return [
         'line2' => 'Adresse ligne 2 (Facultative)',
         'neighborhood' => 'Quartier',
         'area' => 'Commune/Zone',
+        'province' => 'Province',
+        'territory' => 'Territoire',
         'city' => 'Ville',
     ],
     'addresses' => 'Adresses',
@@ -267,90 +393,164 @@ return [
         'error' => 'Votre confirmation ne correspond pas au mot de passe',
     ],
     'choose_role' => 'Choisir un rôle',
-    'use_email' => 'Utiliser l’adresse Email',
-    'use_phone' => 'Utiliser le n° de téléphone',
-    'go_login' => 'J’ai déjà un compte',
-    'api_token' => 'Votre clé pour utiliser les APIs',
-    'amount' => 'Montant',
-    'currency' => 'Choisir devise',
-    'usd' => 'Dollar américain',
-    'cdf' => 'Franc congolais',
-    'category' => [
-        'animation' => 'Animation',
-        'preach' => 'Prédication',
-    ],
-    // Alert message
-    'adult_content' => 'Ce contenu n’est pas de votre âge',
-    'registered_data' => 'Données enregistrées',
-    'no_data' => 'Ces données n’existent pas',
-    'required_fields' => 'Veuillez vérifier les champs obligatoires',
-    'bank_transaction_description' => 'Transaction d’argent',
-    'transaction_waiting' => 'Veuillez valider le message de votre opérateur sur votre téléphone. Ensuite appuyez sur le bouton ci-dessous.',
-    'transaction_done' => 'Votre opération est terminée !',
-    'transaction_failed' => 'L’envoi de votre paiement a échoué',
-    'transaction_type_error' => 'Veuillez choisir le type de transaction',
-    'new_partner_message' => 'Vous pouvez maintenant vous connecter en tant que partenaire avec votre n° de téléphone. Mot de passe temportaire :',
-
-    // ===== TYPES
-    'media_types' => [
-        'feature_film' => 'Long métrage',
-        'cartoons' => 'Dessins animés',
-        'tv_series' => 'Série TV',
-        'episode' => 'Episode',
-        'tv_program' => 'Programme TV',
-        'music_album' => 'Album musique',
-        'song' => 'Chanson'
-    ],
-
-    // ===== STATUSES
-    'user_statuses' => [
+    'status' => [
+        'created' => 'Créé',
         'activated' => 'Activé',
-        'intermediate' => 'Intermédiaire',
         'disabled' => 'Désactivé',
         'blocked' => 'Bloqué',
     ],
+    'go_login' => 'J’ai déjà un compte',
+    'api_token' => 'Votre clé pour utiliser les APIs',
+    'amount' => 'Montant',
+    'amount_to_pay' => 'Montant à payer',
+    'currency' => 'Choisir devise',
+    'usd' => 'Dollar américain',
+    'cdf' => 'Franc congolais',
+    'cart' => 'Panier',
+    'pay' => 'Payer',
+    'comments' => '{0} Pas de commentaire|{1} Un commentaire|[2,*] :count commentaires',
+    'items' => '{0} Aucun article|{1} Un article|[2,*] :count articles',
+    'recently_added_items' => '{1} Article récemment ajouté.|[2,*] Articles récemment ajoutés.',
 
     // ===== NAVIGATION MENU
     'menu' => [
         'home' => 'Accueil',
+        'dashboard' => 'Tableau de bord',
         'login' => 'Se connecter',
-        'live' => 'En direct',
-        'films' => 'Films',
-        'cartoons' => 'Dessins animés',
-        'series' => 'Séries TV',
-        'programs' => 'Programmes',
-        'preach' => 'Enseignements',
-        'songs' => 'Musique',
-        'books' => 'Livres',
-        'account' => 'Mon compte',
         'about' => 'A propos',
-        'terms_of_use' => 'Conditions',
-        'privacy_policy' => 'Confidentialité',
-        'pricing' => 'Tarifs premium',
+        'terms_of_use' => 'Conditions d’utilisation',
+        'privacy_policy' => 'Politique de confidentialité',
         'contact' => 'Contact',
+        'pricing' => 'Tarifs',
+        'gallery' => 'Galerie',
+        'account' => [
+            'title' => 'Mon compte',
+            'preferences' => 'Préférences',
+            'cart' => 'Mon panier',
+            'payments' => 'Mes paiements',
+        ],
+        'messenger' => 'Messagerie',
         'notifications' => 'Notifications',
-        'donate' => 'Faire un don',
-        'controller' => [
-            'youth' => 'Contenu pour enfants',
-            'adult' => 'Contenu pour adultes'
+        'public' => [
+            'services' => 'Services',
+            'products' => 'Produits',
+            'events' => 'Événements',
+            'career' => 'Carrière',
+        ],
+        'developer' => [
+            'apis' => 'APIs',
+            'integrations' => 'Intégrations',
+        ],
+        'team' => [
+            'members' => [
+                'title' => 'Membres',
+                'job_applications' => 'Demandes d’emploi',
+            ],
+            'product' => [
+                'title' => 'Produit',
+                'tasks' => 'Tâches',
+                'reports' => 'Rapports',
+            ],
+            'service' => [
+                'title' => 'Service',
+                'tasks' => 'Tâches',
+                'reports' => 'Rapports',
+            ],
+        ],
+        'logistics' => [
+            'motor' => [
+                'title' => 'Engins',
+                'vehicle' => 'Véhicules',
+                'other' => 'Autres engins',
+                'part' => 'Pièces de moteur',
+            ],
+            'equipment' => [
+                'title' => 'Matériels',
+                'office' => 'Bureau',
+                'cleaning' => 'Nettoyage',
+                'repair' => 'Réparation',
+                'decor_event' => 'Décor & événementiel',
+                'health_relax' => 'Détente & santé',
+                'manufacture' => 'Fabrication',
+                'building' => 'Construction',
+            ],
+            'material' => [
+                'title' => 'Matériaux',
+                'manufacture' => 'Fabrication',
+                'building' => 'Construction',
+            ],
+            'documents' => 'Documents',
+        ],
+        'financier' => [
+            'expenses' => [
+                'title' => 'Dépenses',
+                'inventories' => 'Inventaires',
+            ],
+            'payments' => 'Paiements',
+        ],
+        'executive' => [
+            'product' => [
+                'title' => 'Produit',
+                'budget' => 'Budget',
+                'financial_report' => 'Rapport financier',
+                'team' => 'Équipe',
+            ],
+            'service' => [
+                'title' => 'Service',
+                'budget' => 'Budget',
+                'financial_report' => 'Rapport financier',
+                'team' => 'Équipe',
+            ],
+            'job_applications' => 'Demandes d’emploi',
+            'staff' => [
+                'title' => 'Personnel',
+                'organization_chart' => 'Organigramme',
+                'executives' => 'Executifs',
+                'financiers' => 'Financiers',
+                'logistics' => 'Logistiques',
+                'administrators' => 'Administrateurs',
+            ],
+        ],
+        'admin' => [
+            'group' => [
+                'title' => 'Groupe',
+                'role' => [
+                    'title' => 'Rôle',
+                    'members' => 'Membres',
+                ],
+                'type' => 'Type',
+                'status' => 'État',
+                'third_party_service' => 'Services tiers',
+            ],
+            'category' => [
+                'title' => 'Catégorie',
+                'product' => [
+                    'title' => 'Produit',
+                    'about' => 'A propos',
+                    'team_members' => 'Membres de l’équipe',
+                    'terms_of_use' => 'Conditions d’utilisation',
+                    'privacy_policy' => 'Politique de confidentialité',
+                    'help_center' => 'Centre d’aide',
+                    'faq' => 'FAQ',
+                ],
+                'service' => [
+                    'title' => 'Service',
+                    'about' => 'A propos',
+                    'team_members' => 'Membres de l’équipe',
+                    'customer' => 'Client',
+                ],
+            ],
+            'miscellaneous' => [
+                'title' => 'Divers',
+                'deadline' => 'Échéance',
+                'event' => 'Événement',
+            ],
         ],
     ],
 
     // ===== EVERY ROLES PAGES
     // Account settings
     'account' => [
-        'watchlist' => 'Ma watchlist',
-        'my_videos' => 'Mes vidéos',
-        'parental_control' => 'Contrôle parental',
-        'recently_watched_videos' => 'Vidéos récemment regardées',
-        'videos' => [
-            'add' => 'Ajouter une vidéo',
-            'edit' => 'Modifier les infos de la vidéo'
-        ],
-        'add_child' => [
-            'message' => 'En ajoutant vos enfants, vous leur permettez de se connecter pour regarder les vidéos de DikiTivi et vous serez en mesure de voir ce qu’ils ont regardé.',
-            'link' => 'Ajouter un enfant'
-        ],
         'on_going' => 'Compte en attente d’activation',
         'deactivated' => [
             'message' => 'Vous avez désactivé votre compte',
@@ -396,37 +596,62 @@ return [
                 'bank_card' => 'Carte bancaire'
             ],
         ],
-        'child' => [
-            'title' => 'Gérer mes enfants',
-            'description' => 'Ajouter vos enfants pour leur permettre de lire des médias tout en gardant un &oelig;il sur ceux qu’ils regardent.',
-            'add' => 'Ajouter un enfant',
-            'click_to_change_picture' => 'Cliquer pour modifier l’image',
+    ],
+
+    // ===== DEVELOPER PAGES
+    'developer' => [
+        'home' => [
+            'title' => 'Espace de développeur',
         ],
     ],
 
-    // ===== CONTROLLER PAGES
-    'controller' => [
+    // ===== TEAM PAGES
+    'developer' => [
         'home' => [
-            'title' => 'Espace du contrôleur',
+            'title' => 'L’équipe Xsam',
+        ],
+    ],
+
+    // ===== LOGISTICS PAGES
+    'logistics' => [
+        'home' => [
+            'title' => 'Espace logistique',
+        ],
+    ],
+
+    // ===== FINANCIER PAGES
+    'financier' => [
+        'home' => [
+            'title' => 'Espace du financier',
+        ],
+    ],
+
+    // ===== EXECUTIVE PAGES
+    'executive' => [
+        'home' => [
+            'title' => 'Espace exécutif',
+        ],
+    ],
+
+    // ===== ADMIN PAGES
+    'admin' => [
+        'home' => [
+            'title' => 'Espace de l’administrateur',
         ],
     ],
 
     // ===== PUBLIC PAGES
     'public' => [
-        'add_watchlist' => 'Ajouter à ma watchlist',
-        'withdraw_watchlist' => 'Retirer de ma watchlist',
-        'send_like' => 'J’aime',
-        'retire_like' => 'Je n’aime pas',
-        'watch_now' => 'Voir maintenant',
-
         // Footer
         'footer' => [
-            'useful_links' => 'Liens utiles',
-            'head_office' => [
-                'title' => 'Notre siège social',
-                'address' => '13 Av. du Grand Seminaire',
-                'phone' => '+243 856 438 822',
-                'email' => 'contact@dikitivi.com'
+            'our_vision' => [
+                'title' => 'Notre vision',
+                'content' => 'Nous visons un monde où toutes les personnes, sans distinction, sont en mesure de profiter d’une <strong>vie descente</strong>, pour eux et leurs proches, grâce à la <strong>technologie</strong>.',
+            ],
+            'links_group' => [
+                'company' => 'Compagnie',
+                'catalog' => 'Catalogue',
+                'on_the_blog' => 'Sur le blog',
             ],
             'newsletter' => [
                 'title' => 'Newsletter',
@@ -437,191 +662,12 @@ return [
         ],
 
         // Home
-        'home' => [
-            'hero' => [
-                'title' => 'Médias chrétiens',
-                'content' => 'Pour commencez, <a href="' . route('login') . '" class="text-decoration-underline" style="color: #abff67;">identifiez-vous</a> ou choisissez votre tranche d’âge afin de trouver les médias qui vous correspondent.',
-                'link1' => 'Voir tous les médias',
-                'link2' => 'Jeunesse'
-            ],
-            'download_mobile_app' => [
-                'title' => 'Télécharger l’appli mobile DikiTivi',
-                'content' => 'L’appli mobile DikiTivi vous aide à suivre vos vidéos sur votre smartphone, tablette ou smart-TV et à bénéficier de tous nos avantages.'
-            ],
-            'pricing' => [
-                'title' => 'Plan tarifaire',
-                'content' => 'Vous pouvez dès maintenant acheter un plan pour suivre des vidéos premiums.',
-            ],
-            'trends' => [
-                'title' => 'Tendances actuelles',
-            ],
-            'films' => [
-                'title' => 'Films récents',
-            ],
-            'lives' => [
-                'title' => 'En direct',
-            ],
-            'series' => [
-                'title' => 'Séries récentes',
-            ],
-            'programs' => [
-                'title' => 'Programmes récents',
-            ],
-            'songs' => [
-                'title' => 'Chansons récentes',
-            ],
-        ],
+        'home' => [],
 
         // About
         'about' => [
-            'title' => 'A propos de DikiTivi',
-            'description' => 'DikiTivi est une chaîne de télé chrétienne visant à offrir aux parents une plateforme leur permettant de trouver, <i>pour eux et pour leurs enfants</i>, des médias sains, ludiques et Divins.',
-            'other_links' => [
-                'title' => 'Autres liens',
-                'link1' => 'Conditions d’utilisation',
-                'link2' => 'Politique de confidentialité',
-                'link3' => 'Centre d’aide',
-                'link4' => 'FAQ'
-            ],
-
-            // About content
-            'content' =>
-            [
-                'titles' =>
-                [
-                    [
-                        'ref' => 'story',
-                        'title' => 'Notre Histoire',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => 'Année 2019',
-                                'content' => 'Réception du mandat pour le projet « DikiTivi ».',
-                            ],
-                            [
-                                'subtitle' => '20 Août 2020',
-                                'content' => 'Création de la chaîne YouTube DikiTivi.',
-                            ],
-                            [
-                                'subtitle' => '6 Septembre 2020',
-                                'content' => 'Création de la chaîne Facebook DikiTivi.',
-                            ],
-                            [
-                                'subtitle' => '25 Décembre 2020',
-                                'content' => 'Mise en ligne des premières vidéos.',
-                            ],
-                            [
-                                'subtitle' => '17 Mars 2021',
-                                'content' => 'Mise en ligne de la première version de la WebTV DikiTivi avec de Bourdak corporation.',
-                            ],
-                            [
-                                'subtitle' => '30 Juin 2022',
-                                'content' => 'Premier direct sur YouTube.',
-                            ],
-                            [
-                                'subtitle' => 'Décembre 2023',
-                                'content' => 'Décision d’élargir l’audience de DikiTivi aux enfants de tous les âges et de créer l’application DikiTivi.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'mission',
-                        'title' => 'Notre mission',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Offrir aux enfants, aux familles des programmes ludiques, amusants, instructifs, sains et Divins, leurs permettant de se divertir et d’assurer leur  croissance spirituelle en Christ ;',
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Apporter Christ, le faire connaître, le faire aimer aux tous petits enfants et aux jeunes via les médias ;',
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Soutenir les parents qui tiennent à élever leurs enfants selon les vraies valeurs morales, Divines et chrétiennes, en se constituant comme média-ressource.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'vision',
-                        'title' => 'Notre vision',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Faire des enfants de tous les âges et de toutes les nations  des disciples du Christ et des vases d’honneurs.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'legal_notice',
-                        'title' => 'Mentions légales',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Ce site web est édité par le Ministère Divines Kids International. Kinshasa, RDC',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'publication_director',
-                        'title' => 'Directeur de la publication',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Jean Loup Atambutu en qualité de Coordonnateur du projet DIKI.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'images',
-                        'title' => 'Photos',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Les photos utilisées sur le site et l’application sont originales libres de droit ou achetées principalement sur des sites spécialisés avec les droits d’exploitation. Dans ce cas, elles ne sont utilisées qu’à des fins purement illustratives et les personnes représentées sur les photos ne sont que des modèles.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'intellectual_property',
-                        'title' => 'Propriété intellectuelle',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Tous droits réservés. Toute reproduction est interdite sans autorisation. Tous les textes, photos, vidéos, mp3, données, logos et autres éléments reproduits sur ce site sont protégés par le droit d’auteur selon les règles de droit Congolais et international.',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'hoster',
-                        'title' => 'Hébergeur',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Le site <strong>dikitivi.com</strong>, l’application, ainsi que les fichiers audio et vidéos sont hébergés sur des serveurs que nous louons à la société « Hostinger » et « Amazon ».',
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'internet_broadcasting',
-                        'title' => 'Diffusion sur Internet',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Les vidéos diffusées sur Internet (service "replay") sont hébergées et diffusées par YouTube. Nous vous invitons à consulter les conditions générales d’utilisation de YouTube à cette adresse : <a href="https://policies.google.com/privacy?hl=en" class="dktv-text-blue">https://policies.google.com/privacy?hl=fr</a>.',
-                            ]
-                        ]
-                    ]
-                ]
-            ],
+            'title' => 'A propos de Xsam Technologies',
+            'description' => '',
 
             // Terms of use
             'terms_of_use' => [
@@ -646,242 +692,22 @@ return [
             // Privacy policy
             'privacy_policy' => [
                 'title' => 'Politique de confidentialité',
-                'description' => 'Bienvenue dans la politique de confidentialité et protection de vos données personnelles chez DikiTivi.',
+                'description' => 'Bienvenue dans la politique de confidentialité et protection de vos données personnelles chez Xsam Technologies.',
                 'titles' =>
                 [
                     [
-                        'ref' => 'information_collection',
-                        'title' => 'Collecte de l’information',
+                        'ref' => '',
+                        'title' => '',
                         'contents' =>
                         [
                             [
                                 'subtitle' => '',
-                                'content' => 'Nous recueillons des informations lorsque vous faites un don sur notre site ou que vous vous inscrivez pour écrire un commentaire, pour contacter un orateur du site ou encore pour vous inscrire à un événement ou à un service offert. Les informations recueillies sont uniquement celles que vous nous avez fournies et varient selon les cas.'
+                                'content' => ''
                             ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Dans le cadre d’un don par exemple, nous vous demandons votre pays (obligatoire), votre prénom et nom (obligatoire), votre adresse e-mail (obligatoire), votre numéro de téléphone, votre adresse postale, votre organisme le cas échéant, et votre mode de paiement.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'En outre, nous recevons et enregistrons automatiquement des informations à partir de votre navigateur internet, y compris votre adresse IP, vos logiciels, votre matériel, et la page que vous visitez.'
-                            ]
                         ]
-                    ],
-                    [
-                        'ref' => 'data_use',
-                        'title' => 'Utilisation des informations',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => 'Toutes les informations que nous recueillons auprès de vous peuvent être utilisées pour :',
-                                'content' => 'Personnaliser votre expérience et répondre à vos besoins individuels ;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Améliorer notre site web ;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Améliorer le service auprès de nos utilisateurs et de nos donateurs et que leurs besoins soient pris en charge ;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Vous contacter par email ou par SMS ;'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Administrer un concours, une promotion, ou une enquête.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'third_party_disclosure',
-                        'title' => 'Divulgation à des tiers',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Nous ne vendons, n’échangeons et ne transférons pas vos informations personnelles identifiables à des tiers. Cela ne comprend pas les tierces parties de confiance qui nous aident à exploiter notre site internet, tant que ces parties conviennent de garder ces informations confidentielles.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Nous pensons qu’il est nécessaire de partager des informations afin d’enquêter, de prévenir ou de prendre des mesures concernant des activités illégales, fraudes présumées, situations impliquant des menaces potentielles à la sécurité physique de toute personne, violations de nos conditions d’utilisation, ou quand la loi nous y contraint.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Les informations non-privées, cependant, peuvent être fournies à d’autres parties majoritairement pour des besoins d’amélioration de notre site internet.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'data_safety',
-                        'title' => 'Protection des informations',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Nous mettons en œuvre une variété de mesures de sécurité pour préserver la sécurité de vos informations personnelles. Seuls les employés qui ont besoin d’effectuer un travail spécifique ont accès aux informations personnelles identifiables. Les ordinateurs et serveurs utilisés pour stocker des informations personnelles identifiables sont conservés dans un environnement sécurisé.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Aucune information bancaire n’est enregistrée dans nos bases de données hormis les coordonnées bancaires.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Est-ce que nous utilisons des cookies ? Oui. Nos cookies améliorent l’accès à notre site et identifient les visiteurs réguliers. En outre, nos cookies améliorent l’expérience d’utilisateur grâce au suivi et au ciblage de ses intérêts. Cependant, cette utilisation des cookies n’est en aucune façon liée à des informations personnelles identifiables sur notre site.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'data_retirement',
-                        'title' => 'Droit d’opposition, de retrait de vos informations',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Nous nous engageons à vous offrir un droit d’opposition et de retrait quant à vos renseignements personnels. Le droit d’opposition s’entend comme étant la possibilité offerte aux internautes de refuser que leurs renseignements personnels soient utilisés à certaines fins mentionnées lors de la collecte. Le droit de retrait s’entend comme étant la possibilité offerte aux internautes de demander à ce que leurs renseignements personnels ne figurent plus, par exemple, dans une liste de diffusion.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Pour exercer ce droit de retrait de vos informations, veuillez nous écrire en vous rendant sur la page contact de notre site internet.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'donation_refund',
-                        'title' => 'Délai de rétractation, annulation et remboursement de votre don',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Les paiements en ligne ne font pas l’objet d’un droit de rétractation. Tout paiement est ferme et définitif.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Les paiements réalisés par les donateurs ne donnent lieu à aucun remboursement.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'access_right',
-                        'title' => 'Droit d’accès',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Nous nous engageons à reconnaître un droit d’accès et de rectification aux personnes concernées désireuses de consulter, modifier, voire radier les informations les concernant.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Pour exercer ce droit d’accès veuillez nous écrire en vous rendant sur la page contact de notre site internet.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'unsuscribe',
-                        'title' => 'Se désabonner',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'Nous utilisons l’adresse e-mail que vous fournissez pour vous envoyer des informations et mises à jour relatives à votre don, des nouvelles de notre ministère (si vous avez choisi de recevoir de nos nouvelles), etc. Si à n’importe quel moment vous souhaitez vous désinscrire et ne plus recevoir d’e-mails, des instructions de désabonnement détaillées sont incluses en bas de chaque e-mail, ou bien écrivez-nous par e-mail à <strong>contact@dikitivi.com</strong>.'
-                            ]
-                        ]
-                    ],
-                    [
-                        'ref' => 'consent',
-                        'title' => 'Consentement',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => 'En utilisant notre site ou notre application, vous consentez implicitement à nos conditions générales d’utilisation, ainsi que celle de YouTube.'
-                            ],
-                            [
-                                'subtitle' => '',
-                                'content' => 'Nous vous invitons à consulter les conditions générales d’utilisation de YouTube à cette adresse : <a href="https://policies.google.com/privacy?hl=fr" class="dktv-text-blue">https://policies.google.com/privacy?hl=fr</a>'
-                            ]
-                        ]
-                    ],
+                    ]
                 ]
             ],
-
-            // Pricing
-            'pricing' => [
-                'title' => 'Notre plan de tarification',
-            ],
-
-            // Contact
-            'contact' => [
-                'title' => 'Nous Contacter',
-                'description' => 'Vous pouvez soit nous écrire directement ici, soit par mail, ou vous pouvez vous rendre à notre adresse ci-dessous',
-                'message_subject' => 'Sujet',
-                'message_content' => 'Contenu du message'
-            ],
-
-            // Donate
-            'donate' => [
-                'title' => 'Faire un don pour soutenir DikiTivi',
-                'description' => 'En soutenant le ministère DikiTivi, non seulement vous contribuez à l’amélioration de vie du peuple de Dieu, mais aussi vous contribuez à l’aide qu’apporte le ministère aux ophelins et aux démunis.',
-                'content1' => 'Si c’est l’argent que vous voulez envoyer, vous n’avez qu’à sélectionner le mode de paiement ; ensuite, vous l’envoyez directement en ligne.',
-                'content2' => 'Si vous voulez donner autre chose que de l’argent, vous n’avez qu’à donner la description de votre don.',
-                'anonyme' => 'Faites votre don',
-                'partner' => 'Devenir partenaire',
-                'your_identity' => 'Votre identité',
-                'period' => [
-                    'title' => 'Période',
-                    'choose' => 'Choisir une période',
-                    'unique' => 'Paiement unique',
-                ],
-                'send_money' => [
-                    'title' => 'Envoyer l’argent',
-                    'description' => 'Choisir le mode de paiement',
-                    'mobile_money' => 'Mobile money',
-                    'bank_card' => 'Carte bancaire'
-                ],
-                'other_donation' => [
-                    'title' => 'Autre don',
-                    'description' => 'Description de votre don'
-                ],
-            ],
-        ],
-
-        // Media
-        'media' => [
-            'categories' => 'Catégories',
-            'all_episodes' => 'Épisodes de la série',
-            'all_songs' => 'Chansons de l’album',
-
-            'label' => [
-                'title' => 'Titre',
-                'description' => 'Description',
-                'author' => 'Auteur',
-                'series' => 'Série',
-                'album' => 'Album',
-                'artist' => 'Artist(s)',
-                'writter' => 'Écrit par',
-                'director' => 'Dirigé par',
-                'published_date' => 'Date de publication',
-            ],
-            'datas' => [
-                'return_link' => [
-                    'film' => 'Voir tous les films',
-                    'episode' => 'Autres épisodes de la série',
-                    'series' => 'Voir toutes les séries TV',
-                    'song' => 'Autres chansons de l’album',
-                    'album' => 'Voir toutes les chansons',
-                    'program' => [
-                        'default' => 'Voir les autres émissions',
-                        'preach' => 'Voir les autres enseignements',
-                    ],
-                ],
-            ],
-        ],
-
-        // Lives
-        'lives' => [
-            '' => '',
         ],
     ],
 ];

@@ -41,6 +41,8 @@ Route::get('/event/{entity}/{id}', [HomeController::class, 'eventEntityDatas'])-
 Route::get('/career', [HomeController::class, 'career'])->name('career.home');
 Route::get('/career/{entity}', [HomeController::class, 'careerEntity'])->name('career.entity');
 Route::get('/career/{entity}/{id}', [HomeController::class, 'careerEntityDatas'])->whereNumber('id')->name('career.entity.datas');
+Route::get('/articles', [HomeController::class, 'articles'])->name('articles.home');
+Route::get('/articles/{id}', [HomeController::class, 'articleDatas'])->whereNumber('id')->name('articles.datas');
 // Account
 Route::get('/account', [AccountController::class, 'account'])->name('account');
 Route::post('/account', [AccountController::class, 'updateAccount']);

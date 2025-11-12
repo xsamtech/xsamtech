@@ -29,7 +29,7 @@
         <!-- ===============================================-->
         <!--                  Fonts                         -->
         <!-- ===============================================-->
-        <link rel="stylesheet" href="{{ asset('assets/icons/bootstrap-icons/bootstrap-icons.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/icons/bootstrap-icons/font/bootstrap-icons.min.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
@@ -238,37 +238,42 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-4 pe-lg-4 mb-4 mb-lg-0">
-                <h5 class="text-white mb-3">Notre vision</h5>
-                <p class="text-700">Nous visons un monde où toutes les personnes, sans distinction, sont en mesure de profiter d’une <strong>vie descente</strong>, pour eux et leurs proches, grâce à la <strong>technologie</strong>.</p>
+                <div class="bg-image mb-3">
+                  <img src="{{ asset('assets/img/logo-text.png') }}" alt="Xsam Technologies" width="250">
+                  <div class="mask"></div>
+                </div>
+                <h5 class="text-white mb-3">@lang('miscellaneous.public.footer.our_vision.title')</h5>
+                <p class="text-700">@lang('miscellaneous.public.footer.our_vision.content')</p>
                 <ul class="list-inline mb-0">
-                  <li class="list-inline-item me-0"><a class="text-900 hover-color-white px-2" href="#!"><span class="bi bi-x-twitter"></span></a></li>
-                  <li class="list-inline-item me-0"><a class="text-900 hover-color-white px-2" href="#!"><span class="bi bi-linkedin"></span></a></li>
-                  <li class="list-inline-item me-0"><a class="text-900 hover-color-white pe-2" href="#!"><span class="bi bi-instagram"></span></a></li>
+                  <li class="list-inline-item me-0"><a class="pe-2 text-900 hover-color-white" href="https://x.com/xsamtech" target="_blank"><span class="bi bi-twitter-x"></span></a></li>
+                  <li class="list-inline-item me-0"><a class="pe-2 text-900 hover-color-white" href="https://www.linkedin.com/company/xsamtech" target="_blank"><span class="bi bi-linkedin"></span></a></li>
+                  <li class="list-inline-item me-0"><a class="pe-2 text-900 hover-color-white" href="https://www.instagram.com/xsamtech/" target="_blank"><span class="bi bi-instagram"></span></a></li>
+                  <li class="list-inline-item me-0"><a class="pe-2 text-900 hover-color-white" href="https://web.facebook.com/profile.php?id=61575850362221" target="_blank"><span class="bi bi-facebook"></span></a></li>
                 </ul>
               </div>
 
               <div class="col-lg-8">
                 <div class="row">
                   <div class="col-6 col-md-3 ps-lg-4 mb-4 mb-lg-0">
-                    <h5 class="text-white mb-3">Compagnie</h5>
+                    <h5 class="text-white mb-3">@lang('miscellaneous.public.footer.links_group.company')</h5>
                     <ul class="list-unstyled mb-0">
-                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('about.home') }}">A propos</a></li>
-                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('about.entity', ['entity' => 'contact']) }}">Contact</a></li>
-                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('about.entity', ['entity' => 'gallery']) }}">Galerie</a></li>
-                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('career.home') }}">Carrière</a></li>
+                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('about.home') }}">@lang('miscellaneous.menu.about')</a></li>
+                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('about.entity', ['entity' => 'contact']) }}">@lang('miscellaneous.menu.contact')</a></li>
+                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('career.home') }}">@lang('miscellaneous.menu.public.career')</a></li>
+                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('event.home') }}">@lang('miscellaneous.menu.public.events')</a></li>
                     </ul>
                   </div>
 
                   <div class="col-6 col-md-3 ps-4 mb-4 mb-lg-0">
-                    <h5 class="text-white mb-3">Produit</h5>
+                    <h5 class="text-white mb-3">@lang('miscellaneous.public.footer.links_group.catalog')</h5>
                     <ul class="list-unstyled mb-0">
-                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('products.home') }}">Produit</a></li>
-                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('services.home') }}">Services</a></li>
-                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('event.home') }}">Evénements</a></li>
+                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('products.home') }}">@lang('miscellaneous.menu.public.products')</a></li>
+                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('services.home') }}">@lang('miscellaneous.menu.public.services')</a></li>
+                      <li class="mb-1"><a class="text-700 hover-color-white" href="{{ route('about.entity', ['entity' => 'gallery']) }}">@lang('miscellaneous.menu.gallery')</a></li>
                     </ul>
                   </div>
                   <div class="col-md-6 ps-md-4">
-                    <h5 class="text-white mb-3">SUR LE BLOG</h5>
+                    <h5 class="text-white mb-3">@lang('miscellaneous.public.footer.links_group.on_the_blog')</h5>
                     <ul class="list-unstyled mb-0">
                       <li class="mb-3">
                         <a class="text-700 hover-color-white" href="#">Lorem ipsum dolor sit amet, consectetur...</a>
