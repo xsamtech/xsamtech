@@ -128,8 +128,8 @@
               <div class="col-md-6 col-lg-4 text-md-end mb-2 mb-md-0">
                 <div class="row g-0 align-items-center justify-content-md-end border-md-end">
                   <div class="col-auto ps-2 ps-md-0 pe-2 text-lg-end order-1 order-md-0">
-                    <h3 class="text-white d-inline-block fs-4 mb-0 lh-1 mt-1" data-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.2}'>S’abonner</h3>
-                    <p class="mb-0 text-white" data-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.3}'>Pour réjoindre la newsletter</p>
+                    <h3 class="text-white d-inline-block fs-4 mb-0 lh-1 mt-1" data-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.2}'>@lang('miscellaneous.public.footer.newsletter.title')</h3>
+                    <p class="mb-0 text-white" data-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.3}'>@lang('miscellaneous.public.footer.newsletter.text')</p>
                   </div>
                   <div class="col-auto ps-lg-1 pe-md-4 pe-lg-3 pe-xl-4 order-0 order-md-1" data-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'><img class="opacity-75" src="{{ asset('assets/img/transit/line-icons/mail-4.svg') }}" width="65" style="margin-top: 0px;" alt="" /></div>
                 </div>
@@ -138,8 +138,8 @@
                 <form data-zanim-xs='{"from":{"opacity":1,"x":30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>
                   <div class="form-floating mb-0">
                     <input class="form-control" id="floatingInput" type="email" placeholder="Votre E-mail" required="required" />
-                    <label for="floatingInput">Votre E-mail</label>
-                    <button class="btn btn-input-icon" type="submit"><span class="fas fa-arrow-right"></span></button>
+                    <label for="floatingInput">@lang('miscellaneous.public.footer.newsletter.email')</label>
+                    <button class="btn btn-input-icon" type="submit" title="@lang('miscellaneous.public.footer.newsletter.submit')"><span class="fas fa-arrow-right"></span></button>
                   </div>
                 </form>
               </div>
@@ -157,10 +157,10 @@
             <div class="row">
               <div class="col text-center mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
-                  <h2 class="fs-md-5" data-zanim-xs='{"duration":1.5,"delay":0}'>Ecrivez-nous</h2>
+                  <h2 class="fs-md-5" data-zanim-xs='{"duration":1.5,"delay":0}'>@lang('miscellaneous.public.footer.contact.title')</h2>
                 </div>
                 <div class="overflow-hidden">
-                  <p class="fs--1 text-uppercase text-black ls-1 mb-0" data-zanim-xs='{"duration":1.5,"delay":0.1}'>nous sommes heureux de vous écouter à tout moment</p>
+                  <p class="fs--1 text-uppercase text-black ls-1 mb-0" data-zanim-xs='{"duration":1.5,"delay":0.1}'>@lang('miscellaneous.public.footer.contact.text')</p>
                 </div>
                 <div class="overflow-hidden">
                   <hr class="hr-short border-black" data-zanim-xs='{"duration":1.5,"delay":0.2}' />
@@ -169,54 +169,45 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-lg-6 mb-5 mb-lg-0 d-flex flex-column justify-content-between">
-                <div class="row">
+                <div class="row mb-3">
                   <div class="col-12">
-                    <h5 class="mb-3">Rejoignez-nous</h5>
+                    <h5 class="mb-3">@lang('miscellaneous.public.footer.contact.join_us.title')</h5>
                   </div>
-                  <div class="col-auto mb-2 mb-sm-0">
+                  <div class="col-auto mb-3 mb-sm-0">
                     <div class="row">
                       <div class="col-1"><span class="fas fa-location-arrow text-700"></span></div>
                       <div class="col px-2">
                         <p class="mb-1 text-700"><strong>Xsam Technologies</strong></p>
-                        <p class="mb-0 text-600">08, av. Munzele, Q/Musangu,<br />Mt-Ngafula, Kinshasa-RDC</p>
+                        <p class="mb-0 text-600">@lang('miscellaneous.public.footer.contact.join_us.address')</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-auto">
-                    <div class="row mb-2 mb-sm-1">
+                    <div class="row my-2">
                       <div class="col-1"><span class="fas fa-phone me-2 text-700"> </span></div>
-                      <div class="col px-2"><a class="text-600" href="tel:+243815894649">+243 815 894 649 </a></div>
+                      <div class="col px-2"><a class="text-600" href="tel:{{ __('miscellaneous.public.footer.contact.join_us.phones.phone_1.link') }}">@lang('miscellaneous.public.footer.contact.join_us.phones.phone_1.text')</a></div>
                     </div>
                     <div class="row">
                       <div class="col-1"><span class="fas fa-envelope me-2 text-700"></span></div>
-                      <div class="col px-2"><a class="text-600" href="mailto:xsamtechnologies@gmail.com">xsamtechnologies@gmail.com</a></div>
+                      <div class="col px-2">
+                        <a class="text-600" href="mailto:{{ __('miscellaneous.public.footer.contact.join_us.emails.email_1.link') }}">@lang('miscellaneous.public.footer.contact.join_us.emails.email_1.text')</a><br>
+                        <a class="text-600" href="mailto:{{ __('miscellaneous.public.footer.contact.join_us.emails.email_2.link') }}">@lang('miscellaneous.public.footer.contact.join_us.emails.email_2.text')</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="googlemap rounded data-map mt-4" data-latlng="48.8583701,2.2922873,17" data-scrollwheel="false" data-icon="{{ asset('assets/img/transit/map-marker.png') }}" data-zoom="17" data-theme="Default" style="min-height: 14.63rem;">
-                  <div class="marker-content py-3">
-                    <h5>Crown Tower</h5>
-                    <p>Lorem ipsum sit amet, dolor 1889 tower,<br /> with steps and elevators to observation decks.</p>
-                  </div>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.475387842533!2d15.272899674977001!3d-4.321422095652581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a333195cfa37f%3A0xd115031d3fd488e9!2sSilikin%20Village!5e0!3m2!1sfr!2scd!4v1762927202852!5m2!1sfr!2scd" width="480" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div class="col-lg-6">
-                <h5 class="mb-3">N'hésitez pas à nous écrire !</h5>
-                <form class="zform text-left" method="post">
-                  <input type="hidden" name="to" value="contact@xsam-tech.com" />
-                  <div class="form-group mb-3">
-                    <input class="fs-0 form-control" type="text" placeholder="Vos Noms" required="required" />
-                  </div>
-                  <div class="form-group mb-3">
-                    <input class="fs-0 form-control" type="email" placeholder="Adresse E-mail" required="required" />
-                  </div>
-                  <div class="form-group mb-3">
-                    <textarea class="fs-0 form-control contact-message" rows="8" placeholder="Tapez votre message ici" required="required"></textarea>
-                  </div>
-                  <div class="zform-feedback d-grid">
-                    <button class="btn btn-dark hvr-sweep-top" type="submit">Envoyer le message</button>
-                  </div>
-                </form>
+                <h5 class="mb-3">@lang('miscellaneous.public.footer.contact.write_us.title')</h5>
+                <p class="mb-3">@lang('miscellaneous.public.footer.contact.write_us.description')</p>
+                <div class="zform text-left">
+@if (auth()->check())
+                  <button class="btn btn-dark hvr-sweep-top">@lang('miscellaneous.public.footer.contact.write_us.start_message')</button>
+@else
+                  <a href="{{ route('login') }}" class="btn btn-dark hvr-sweep-top">@lang('miscellaneous.public.footer.contact.write_us.start_message')</a>
+@endif
+                </div>
               </div>
             </div>
           </div>
@@ -273,7 +264,7 @@
                     </ul>
                   </div>
                   <div class="col-md-6 ps-md-4">
-                    <h5 class="text-white mb-3">@lang('miscellaneous.public.footer.links_group.on_the_blog')</h5>
+                    <h5 class="text-white mb-3">@lang('miscellaneous.public.footer.links_group.our_articles')</h5>
                     <ul class="list-unstyled mb-0">
                       <li class="mb-3">
                         <a class="text-700 hover-color-white" href="#">Lorem ipsum dolor sit amet, consectetur...</a>

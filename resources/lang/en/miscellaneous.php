@@ -651,62 +651,65 @@ return [
             'links_group' => [
                 'company' => 'Compagnie',
                 'catalog' => 'Catalogue',
-                'on_the_blog' => 'Sur le blog',
+                'our_articles' => 'Nos articles',
             ],
             'newsletter' => [
-                'title' => 'Newsletter',
-                'text' => 'Abonnez-vous pour recevoir nos infos les plus pertinentes.',
+                'title' => 'S’abonner',
+                'text' => 'Pour réjoindre la newsletter',
                 'email' => 'Votre e-mail',
                 'submit' => 'Envoyer'
+            ],
+            'contact' => [
+                'title' => 'Nous contacter',
+                'text' => 'Nous sommes heureux de vous écouter à tout moment',
+                'join_us' => [
+                    'title' => 'Réjoignez-nous',
+                    'address' => 'Concession COTEX, n&deg;63, Ave Colonel Mondjiba, Kinshasa',
+                    'emails' => [
+                        'email_1' => [
+                            'link' => 'contact@xsamtech.com',
+                            'text' => 'contact@xsamtech.com',
+                        ],
+                        'email_2' => [
+                            'link' => 'xsamtechnologies@gmail.com',
+                            'text' => 'xsamtechnologies@gmail.com',
+                        ],
+                    ],
+                    'phones' => [
+                        'phone_1' => [
+                            'link' => '+243815894649',
+                            'text' => '(+243) 815 894 649',
+                        ],
+                    ],
+                ],
+                'write_us' => [
+                    'title' => 'N’hésitez pas à nous écrire !',
+                    'description' => 'Grâce à notre système de messagerie, entrez directement en contact avec un membre de notre équipe. Mais encore, avec l’IA, vous pouvez poser n’importe quelle question au sujet de nos produits et services.',
+                    'start_message' => 'Commencez avec la messagerie'
+                ],
             ],
         ],
 
         // Home
-        'home' => [],
+        'home' => [
+            'title' => '',
+        ],
 
         // About
         'about' => [
-            'title' => 'A propos de Xsam Technologies',
+            'title' => 'A propos de nous',
             'description' => '',
 
             // Terms of use
             'terms_of_use' => [
                 'title' => 'Conditions d’utilisation',
                 'description' => 'En utilisant nos services, vous acceptez nos conditions d’utilisation. Alors nous vous suggérons de prendre un peu de votre temps pour lire ces conditions, car vous êtes sur le point de conclure un contrat qui vous engage.',
-                'titles' =>
-                [
-                    [
-                        'ref' => '',
-                        'title' => '',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => ''
-                            ],
-                        ]
-                    ]
-                ]
             ],
 
             // Privacy policy
             'privacy_policy' => [
                 'title' => 'Politique de confidentialité',
                 'description' => 'Bienvenue dans la politique de confidentialité et protection de vos données personnelles chez Xsam Technologies.',
-                'titles' =>
-                [
-                    [
-                        'ref' => '',
-                        'title' => '',
-                        'contents' =>
-                        [
-                            [
-                                'subtitle' => '',
-                                'content' => ''
-                            ],
-                        ]
-                    ]
-                ]
             ],
         ],
     ],
