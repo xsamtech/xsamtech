@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Web;
 use App\Http\Controllers\ApiClientManager;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Lang;
 
 /**
  * @author Xanders
@@ -43,6 +44,31 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         return view('welcome');
+    }
+
+    /**
+     * GET: About page
+     *
+     * @return \Illuminate\View\View
+     */
+    public function about()
+    {
+        return view('about');
+    }
+
+    /**
+     * GET: About page
+     *
+     * @param  string  $entity
+     * @return \Illuminate\View\View
+     */
+    public function aboutEntity($entity)
+    {
+        $titles = Lang::get('miscellaneous.public.about.' . $entity . '.titles');
+
+        return view('about', [
+            'titles' => $titles
+        ]);
     }
 
     // ==================================== HTTP POST METHODS ====================================

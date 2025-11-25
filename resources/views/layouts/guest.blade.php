@@ -67,28 +67,28 @@
           <div class="collapse navbar-collapse" id="primaryNavbarCollapse">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('home') }}"><span class="nav-link-text">Accueil</span></a>
+                <a class="nav-link{{ Route::is('home') ? ' active' : '' }}" href="{{ route('home') }}"><span class="nav-link-text">@lang('miscellaneous.menu.home')</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" href="{{ route('about.home') }}" data-bs-toggle="dropdown-on-hover" aria-haspopup="true" aria-expanded="false">
-                  <span class="nav-link-text">A propos</span>
+                <a class="nav-link dropdown-toggle{{ Route::is('about.home') || Route::is('about.entity') ? ' active' : '' }}" id="navbarDropdownMenuLink2" href="{{ route('about.home') }}" data-bs-toggle="dropdown-on-hover" aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-link-text">@lang('miscellaneous.menu.about')</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink4">
-                  <a class="dropdown-item" href="{{ route('about.entity', ['entity' => 'terms_of_use']) }}">Conditions d’utilisation</a>
-                  <a class="dropdown-item" href="{{ route('about.entity', ['entity' => 'privacy_policy']) }}">Politique de confidentialité</a>
+                  <a class="dropdown-item" href="{{ route('about.entity', ['entity' => 'terms_of_use']) }}">@lang('miscellaneous.menu.terms_of_use')</a>
+                  <a class="dropdown-item" href="{{ route('about.entity', ['entity' => 'privacy_policy']) }}">@lang('miscellaneous.menu.privacy_policy')</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('products.home') }}"><span class="nav-link-text">Produits</span></a>
+                <a class="nav-link{{ Route::is('products.home') ? ' active' : '' }}" href="{{ route('products.home') }}"><span class="nav-link-text">@lang('miscellaneous.menu.public.products')</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('services.home') }}"><span class="nav-link-text">Services</span></a>
+                <a class="nav-link{{ Route::is('services.home') ? ' active' : '' }}" href="{{ route('services.home') }}"><span class="nav-link-text">@lang('miscellaneous.menu.public.services')</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('event.home') }}"><span class="nav-link-text">Evénements</span></a>
+                <a class="nav-link{{ Route::is('event.home') ? ' active' : '' }}" href="{{ route('event.home') }}"><span class="nav-link-text">@lang('miscellaneous.menu.public.events')</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('career.home') }}"><span class="nav-link-text">Carrière</span></a>
+                <a class="nav-link{{ Route::is('career.home') ? ' active' : '' }}" href="{{ route('career.home') }}"><span class="nav-link-text">@lang('miscellaneous.menu.public.career')</span></a>
               </li>
             </ul>
           </div>
